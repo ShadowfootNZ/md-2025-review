@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mission Day Image Review</title>
+  <style>
+    :root {
+      --gap: 12px;            /* space between items */
+      --row-gap: 28px;        /* space between rows */
+      --max-page-width: 1400px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0 auto;
+      padding: 20px 16px 60px;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.45;
+      color: #eee;
+      background-color: #111;
+      max-width: var(--max-page-width);
+    }
+    header { margin-bottom: 20px; }
+    h1 {
+      font-size: 1.25rem;
+      margin: 0 0 6px;
+    }
+    .hint {
+      color: #555; font-size: .9rem;
+    }
+    .row {
+      margin-top: var(--row-gap);
+    }
+    .row-title {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ddd;
+      border-left: 4px solid #444;
+      padding-left: 8px;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--gap);
+      justify-content: flex-start;
+    }
+    figure {
+      margin: 0;
+      padding: 8px;
+    }
+    a {
+      text-decoration: none; color: inherit;
+    }
+    img {
+      width: 512px;
+      height: 512px;
+      display: block;
+      border: 1px solid #ccc;
+      object-fit: contain;
+    }
+    figcaption {
+      margin-top: 6px;
+      font-size: .85rem;
+      color: #aaa;
+      text-align: center;
+    }
+    .empty-note {
+      color: #999;
+      font-style: italic;
+      font-size: .9rem;
+      margin: 6px 0 0 12px;
+    }
+    footer {
+      margin-top: 32px;
+      color: #888;
+      font-size: .85rem;
+    }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mission Day – Image Review</h1>
+    <!-- <div class="hint">
+      Filenames are expected like <code>MD-&lt;row&gt;-&lt;num&gt;.jpg</code>, where <code>num</code> is 1–6. Missing files are skipped automatically.
+    </div> -->
+  </header>
+
+  <main id="app" aria-live="polite"></main>
+
+  <!-- <footer>
+    Tip: Adjust rows or settings via URL, e.g.
+    <code>?rows=1-8,10&base=images&ext=jpg&maxnum=6</code>
+  </footer> -->
+
+  <script>
+    // ---------- Configuration (defaults) ----------
+    const DEFAULTS = {
+      maxRows: 24,          // Highest row label you'll attempt
+      maxNumPerRow: 6,      // 1..N per row
+      basePath: 'images',   // folder containing the images ('' if in same folder as index.html)
+      prefix: 'MD',         // filename prefix
+      ext: 'jpg'            // jpg or jpeg
+    };
+
+    // ---------- URL param helpers ----------
+    const params = new URLSearchParams(location.search);
+
+    // rows: allow "1-8,10,12-14"
+    function parseRowsParam(v, fallbackMax) {
+      if (!v) return Array.from({length: fallbackMax}, (_, i) => i + 1);
+      const parts = v.split(',').map(s => s.trim()).filter(Boolean);
+      const out = new Set();
+      for (const p of parts) {
+        if (p.includes('-')) {
+          const [a, b] = p.split('-').map(n => parseInt(n, 10));
+          if (!isNaN(a) && !isNaN(b)) {
+            const [start, end] = a <= b ? [a, b] : [b, a];
+            for (let r = start; r <= end; r++) out.add(r);
+          }
+        } else {
+          const n = parseInt(p, 10);
+          if (!isNaN(n)) out.add(n);
+        }
+      }
+      return [...out].sort((a,b) => a - b);
+    }
+
+    const rows = parseRowsParam(params.get('rows'), DEFAULTS.maxRows);
+    const basePath = params.get('base') ?? DEFAULTS.basePath;
+    const ext = (params.get('ext') ?? DEFAULTS.ext).replace(/^\./, '');
+    const maxNumPerRow = parseInt(params.get('maxnum') || DEFAULTS.maxNumPerRow, 10) || DEFAULTS.maxNumPerRow;
+    const prefix = params.get('prefix') ?? DEFAULTS.prefix;
+
+    const app = document.getElementById('app');
+
+    function imgSrc(row, num) {
+      const file = `${prefix}-${row}-${num}.${ext}`;
+      return basePath ? `${basePath}/${file}` : file;
+    }
+
+    function makeRow(rowNumber) {
+      const section = document.createElement('section');
+      section.className = 'row';
+      section.setAttribute('aria-labelledby', `row-${rowNumber}`);
+
+      // const h2 = document.createElement('h2');
+      // h2.className = 'row-title';
+      // h2.id = `row-${rowNumber}`;
+      // h2.textContent = `Row ${rowNumber}`;
+      // section.appendChild(h2);
+
+      const grid = document.createElement('div');
+      grid.className = 'grid';
+      section.appendChild(grid);
+
+      let created = 0;
+      for (let n = 1; n <= maxNumPerRow; n++) {
+        const src = imgSrc(rowNumber, n);
+
+        const fig = document.createElement('figure');
+        const a = document.createElement('a');
+        a.href = src; a.target = '_blank'; a.rel = 'noreferrer';
+
+        const img = document.createElement('img');
+        img.loading = 'lazy';
+        img.alt = `Row ${rowNumber} – ${n}`;
+        img.src = src;
+
+        // If an image 404s, remove the whole figure (skip the gap)
+        img.onerror = () => fig.remove();
+
+        const cap = document.createElement('figcaption');
+        cap.textContent = `${rowNumber}-${n}`;
+
+        a.appendChild(img);
+        fig.appendChild(a);
+        fig.appendChild(cap);
+        grid.appendChild(fig);
+        created++;
+      }
+
+      // If all attempted images vanished (all 404), show a small note
+      // (give it a tick to allow onerror removals to run)
+      setTimeout(() => {
+        if (!grid.children.length) {
+          const note = document.createElement('div');
+          note.className = 'empty-note';
+          note.textContent = 'No images found for this row.';
+          section.appendChild(note);
+        }
+      }, 0);
+
+      return section;
+    }
+
+    // Build the page
+    rows.forEach(r => app.appendChild(makeRow(r)));
+  </script>
+</body>
+</html>
