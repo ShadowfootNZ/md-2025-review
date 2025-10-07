@@ -148,11 +148,39 @@
       section.className = 'row';
       section.setAttribute('aria-labelledby', `row-${rowNumber}`);
 
-      // const h2 = document.createElement('h2');
-      // h2.className = 'row-title';
-      // h2.id = `row-${rowNumber}`;
-      // h2.textContent = `Row ${rowNumber}`;
-      // section.appendChild(h2);
+      // --- Row titles array ---
+      const ROW_TITLES = [
+        "Webb Street Art",
+        "Massey Art",
+        "War Memorial Art",
+        "Frederick Street Art",
+        "Tory Street Art",
+        "Harrold Street Art",
+        "Tennyson Street Art",
+        "Hania Street Art",
+        "Kent Terrace Art",
+        "Waitangi Park Art",
+        "Te Papa Waterfront Art",
+        "Frank Kitts Park Art",
+        "Queens Wharf Art",
+        "Lambton Quay Art",
+        "Victoria Street Art",
+        "Edward Street Art",
+        "Cuba Street Art",
+        "Left Bank Art",
+        "Glover Park Art",
+        "Eva Street Art",
+        "Te Aro Park Art",
+        "Egmont Street Art",
+        "Marion Street Art",
+        "Upper Cuba Art"
+      ];
+      const h2 = document.createElement('h2');
+      h2.className = 'row-title';
+      h2.id = `row-${rowNumber}`;
+      const title = ROW_TITLES[rowNumber - 1] || `Row ${rowNumber}`;
+      h2.textContent = title;
+      section.appendChild(h2);
 
       const grid = document.createElement('div');
       grid.className = 'grid';
