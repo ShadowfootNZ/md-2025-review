@@ -56,7 +56,7 @@
       width: 512px;
       height: 512px;
       display: block;
-      border: 1px solid #ccc;
+      /* border: 1px solid #ccc; */
       object-fit: contain;
     }
     figcaption {
@@ -86,7 +86,7 @@
   <header>
     <h1>Mission Day – Image Review</h1>
     <!-- <div class="hint">
-      Filenames are expected like <code>MD-&lt;row&gt;-&lt;num&gt;.jpg</code>, where <code>num</code> is 1–6. Missing files are skipped automatically.
+      Filenames are expected like <code>MD-&lt;row&gt;-&lt;num&gt;.(jpg|png)</code>, where <code>num</code> is 1–6. Missing files are skipped automatically. You can control extensions via <code>?exts=jpg,png</code>.
     </div> -->
   </header>
 
@@ -104,7 +104,7 @@
       maxNumPerRow: 6,      // 1..N per row
       basePath: 'images',   // folder containing the images ('' if in same folder as index.html)
       prefix: 'MD',         // filename prefix
-      ext: 'jpg'            // jpg or jpeg
+      exts: ['jpg','png']   // file extensions to try, in order
     };
 
     // ---------- URL param helpers ----------
@@ -132,13 +132,16 @@
 
     const rows = parseRowsParam(params.get('rows'), DEFAULTS.maxRows);
     const basePath = params.get('base') ?? DEFAULTS.basePath;
-    const ext = (params.get('ext') ?? DEFAULTS.ext).replace(/^\./, '');
     const maxNumPerRow = parseInt(params.get('maxnum') || DEFAULTS.maxNumPerRow, 10) || DEFAULTS.maxNumPerRow;
     const prefix = params.get('prefix') ?? DEFAULTS.prefix;
+    const extsParam = params.get('exts') ?? params.get('ext');
+    const EXTENSIONS = (extsParam ? extsParam.split(',') : DEFAULTS.exts)
+      .map(s => s.replace(/^\./,'').toLowerCase())
+      .filter(Boolean);
 
     const app = document.getElementById('app');
 
-    function imgSrc(row, num) {
+    function imgSrc(row, num, ext) {
       const file = `${prefix}-${row}-${num}.${ext}`;
       return basePath ? `${basePath}/${file}` : file;
     }
@@ -188,28 +191,30 @@
 
       let created = 0;
       for (let n = 1; n <= maxNumPerRow; n++) {
-        const src = imgSrc(rowNumber, n);
+        for (const ext of EXTENSIONS) {
+          const src = imgSrc(rowNumber, n, ext);
 
-        const fig = document.createElement('figure');
-        const a = document.createElement('a');
-        a.href = src; a.target = '_blank'; a.rel = 'noreferrer';
+          const fig = document.createElement('figure');
+          const a = document.createElement('a');
+          a.href = src; a.target = '_blank'; a.rel = 'noreferrer';
 
-        const img = document.createElement('img');
-        img.loading = 'lazy';
-        img.alt = `Row ${rowNumber} – ${n}`;
-        img.src = src;
+          const img = document.createElement('img');
+          img.loading = 'lazy';
+          img.alt = `Row ${rowNumber} – ${n}.${ext}`;
+          img.src = src;
 
-        // If an image 404s, remove the whole figure (skip the gap)
-        img.onerror = () => fig.remove();
+          // If an image 404s, remove the whole figure (skip the gap)
+          img.onerror = () => fig.remove();
 
-        const cap = document.createElement('figcaption');
-        cap.textContent = `${rowNumber}-${n}`;
+          const cap = document.createElement('figcaption');
+          cap.textContent = `${rowNumber}-${n}.${ext}`;
 
-        a.appendChild(img);
-        fig.appendChild(a);
-        fig.appendChild(cap);
-        grid.appendChild(fig);
-        created++;
+          a.appendChild(img);
+          fig.appendChild(a);
+          fig.appendChild(cap);
+          grid.appendChild(fig);
+          created++;
+        }
       }
 
       // If all attempted images vanished (all 404), show a small note
