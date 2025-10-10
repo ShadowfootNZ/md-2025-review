@@ -155,11 +155,11 @@
         const fig = document.createElement('figure');
         fig.className = 'tile';
 
-        // Badge: "m-p — Title"
+        // Badge: "m-p"
         const badge = document.createElement('div');
         badge.className = 'badge';
         const title = p.title || 'Untitled';
-        const label = `${mi + 1}-${pi + 1} — ${title}`;
+        const label = `${mi + 1}-${pi + 1}`;
         badge.textContent = label;
 
         // Click: open full-size in a new tab
@@ -220,9 +220,12 @@
         fig.addEventListener('mouseleave', hidePreview);
         fig.addEventListener('click', hidePreview);
 
-        // Optional caption (kept minimal for browsing)
+        // Caption: title and optional description
         const cap = document.createElement('figcaption');
-        cap.textContent = title;
+        const desc = (p.description || '').trim();
+        cap.innerHTML = desc
+          ? `<strong>${title}</strong><br>${desc}`
+          : `<strong>${title}</strong>`;
         fig.appendChild(cap);
 
         tilesDiv.appendChild(fig);
