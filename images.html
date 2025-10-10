@@ -3,97 +3,230 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Wellington Draft 1 — 144 Images</title>
+<title>Wellington — Mission Images Browser</title>
 <style>
-  :root { --gap: 6px; }
-  body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
-  .wrap { padding: 12px; }
-  table { border-collapse: separate; border-spacing: var(--gap); width: 100%; table-layout: fixed; }
-  tr { counter-increment: row; counter-reset: col; }
-  td { background: #f7f7f7; border-radius: 8px; overflow: hidden; position: relative; vertical-align: top; }
-  td::before {
-    counter-increment: col;
-    content: counter(row) "-" counter(col);
-    position: absolute; inset: 6px auto auto 6px;
-    background: rgba(255,255,255,0.8);
-    padding: 2px 6px; border-radius: 6px; font-size: 12px;
+  :root {
+    --bg: #111;
+    --tile: #1a1a1d;
+    --text: #e6e6e6;
+    --muted: #aaa;
+    --gap: 10px;
+    --badge-bg: rgba(0,0,0,0.6);
+    --badge-fg: #fff;
+    --tile-min: 320px;   /* minimum tile width suitable for quick review */
+    --tile-max: 512px;   /* tile can grow if there’s room */
+    --hover-preview-size: 480px;
   }
-  img { display: block; width: 100%; height: auto; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #0b0b0c; color: #eee; }
-    td { background: #151518; }
-    td::before { background: rgba(0,0,0,0.45); color: #fff; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+  .wrap { padding: 12px; display: flex; flex-direction: column; gap: var(--gap); }
+  #status { margin: 0 2px; color: var(--muted); font-size: 14px; }
+
+  /* Horizontal scroller with one column per mission (so we can have &gt;6 items in a column) */
+  .missions {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap);
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mission-col {
+    display: grid;
+    grid-auto-rows: auto;
+    gap: var(--gap);
+    align-content: start;
+  }
+  .mission-header {
+    font-weight: 600;
+    color: #ddd;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* Each tile holds one portal image */
+  figure.tile {
+    margin: 0;
+    background: var(--tile);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: min(max(var(--tile-min), 30vw), var(--tile-max));
+  }
+  a.thumb-link { display: block; text-decoration: none; color: inherit; }
+  img.thumb {
+    display: block;
+    width: 100%;
+    height: auto;            /* keep original aspect ratio for inspection */
+  }
+  .badge {
+    position: absolute; top: 6px; left: 6px;
+    background: var(--badge-bg); color: var(--badge-fg);
+    font-size: 12px; padding: 2px 8px; border-radius: 6px;
+    max-width: calc(100% - 12px);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  figcaption {
+    padding: 8px 10px;
+    font-size: 13px;
+    color: #cfcfcf;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* Optional delayed hover preview (desktop only) */
+  .preview {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+    width: var(--hover-preview-size);
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000;
+  }
+  .preview img { display: block; width: 100%; height: auto; }
+  @media (hover: none) and (pointer: coarse) {
+    /* On touch devices, no hover preview */
+    .preview { display: none !important; }
   }
 </style>
 </head>
 <body>
-<!--
-  This HTML file displays a grid of portal images from a mission series.
-  It fetches data from `points.json`, extracts all portal image URLs,
-  and arranges them in a responsive 6-column grid.
-  The `points.json` file must be in the same directory.
-
-  NOTE: To view this page correctly, you must serve it from a local web server.
-  Opening it directly as a file (file:///) will cause a network error due to
-  browser security policies. You can use `python3 -m http.server` or `npx serve`
-  in your project directory to start a simple server.
--->
 <div class="wrap">
-  <p id="status"></p>
-  <table role="grid"><tbody id="image-grid"></tbody></table>
+  <p id="status">Loading…</p>
+  <div id="missions" class="missions" role="list"></div>
 </div>
+
 <script>
-  // This script fetches mission data, extracts portal images, and displays them in a grid.
-  async function loadImages() {
-    const tbody = document.getElementById('image-grid');
-    const status = document.getElementById('status');
-    status.textContent = 'Loading images...';
+(async () => {
+  const status = document.getElementById('status');
+  const container = document.getElementById('missions');
 
-    try {
-      // 1. Fetch the mission data from the points.json file.
-      const response = await fetch('points.json');
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data = await response.json();
+  try {
+    const res = await fetch('points.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    if (!data || !Array.isArray(data.missions)) throw new Error('Missing missions[]');
 
-      // 2. Validate data and extract all portal image URLs from the mission data.
-      if (!data || !Array.isArray(data.missions)) {
-        throw new Error('Invalid data structure: "missions" array not found.');
-      }
-      // It iterates through each mission and then through each portal, collecting the `imageUrl`.
-      const images = data.missions.flatMap(m => m.portals.map(p => p.imageUrl)).filter(Boolean);
+    let total = 0;
+    const frag = document.createDocumentFragment();
 
-      if (images.length === 0) {
-        status.textContent = 'No images found in points.json.';
-        return;
-      }
-      status.textContent = `Loaded ${images.length} images.`;
+    data.missions.forEach((m, mi) => {
+      const portals = (m.portals || []).filter(p => p && p.imageUrl);
+      if (!portals.length) return;
 
-      let row;
-      // 3. Create the image grid.
-      // For each image URL, it creates an `<img>` element and adds it to a table cell.
-      // A new table row is created for every 6 images to form the grid.
-      images.forEach((url, i) => {
-        if (i % 6 === 0) { // Create a new row every 6 images
-          row = document.createElement('tr');
-          tbody.appendChild(row);
-        }
-        const cell = document.createElement('td');
+      const col = document.createElement('div');
+      col.className = 'mission-col';
+      col.setAttribute('role', 'listitem');
+
+      const header = document.createElement('div');
+      header.className = 'mission-header';
+      header.textContent = `Mission ${mi + 1}`;
+      col.appendChild(header);
+
+      portals.forEach((p, pi) => {
+        total++;
+
+        const fig = document.createElement('figure');
+        fig.className = 'tile';
+
+        // Badge: "m-p — Title"
+        const badge = document.createElement('div');
+        badge.className = 'badge';
+        const title = p.title || 'Untitled';
+        const label = `${mi + 1}-${pi + 1} — ${title}`;
+        badge.textContent = label;
+
+        // Click: open full-size in a new tab
+        const a = document.createElement('a');
+        a.className = 'thumb-link';
+        a.href = p.imageUrl;
+        a.target = '_blank';
+        a.rel = 'noopener';
+
         const img = document.createElement('img');
-        img.src = url;
-        img.loading = 'lazy'; // Lazy loading improves performance by only loading images as they are scrolled into view.
-        cell.appendChild(img);
-        row.appendChild(cell);
+        img.className = 'thumb';
+        img.src = p.imageUrl;
+        img.alt = title;
+        img.loading = 'lazy';
+
+        a.appendChild(img);
+        fig.appendChild(a);
+        fig.appendChild(badge);
+
+        // Optional hover with delay (desktop): show larger preview near cursor
+        let hoverTimer = null;
+        let previewEl = null;
+        const showPreview = (evt) => {
+          // Avoid duplicate
+          if (previewEl) return;
+          previewEl = document.createElement('div');
+          previewEl.className = 'preview';
+          const big = document.createElement('img');
+          big.src = p.imageUrl;
+          big.alt = title;
+          previewEl.appendChild(big);
+          document.body.appendChild(previewEl);
+          positionPreview(evt, previewEl);
+        };
+        const hidePreview = () => {
+          if (hoverTimer) { clearTimeout(hoverTimer); hoverTimer = null; }
+          if (previewEl) { previewEl.remove(); previewEl = null; }
+        };
+        const positionPreview = (evt, el) => {
+          const pad = 16;
+          let x = evt.clientX + pad;
+          let y = evt.clientY + pad;
+          const rect = el.getBoundingClientRect();
+          if (x + rect.width > window.innerWidth - pad) x = evt.clientX - rect.width - pad;
+          if (y + rect.height > window.innerHeight - pad) y = window.innerHeight - rect.height - pad;
+          el.style.left = x + 'px';
+          el.style.top = y + 'px';
+        };
+
+        fig.addEventListener('mouseenter', (evt) => {
+          if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+            hoverTimer = setTimeout(() => showPreview(evt), 550); // ~0.55s delay
+          }
+        });
+        fig.addEventListener('mousemove', (evt) => {
+          if (previewEl) positionPreview(evt, previewEl);
+        });
+        fig.addEventListener('mouseleave', hidePreview);
+        fig.addEventListener('click', hidePreview);
+
+        // Optional caption (kept minimal for browsing)
+        const cap = document.createElement('figcaption');
+        cap.textContent = title;
+        fig.appendChild(cap);
+
+        col.appendChild(fig);
       });
-    } catch (error) {
-      console.error('Failed to load images:', error);
-      status.textContent = `Error: Could not load images. ${error.message}`;
-      status.style.color = 'red';
+
+      frag.appendChild(col);
+    });
+
+    if (total === 0) {
+      status.textContent = 'No images found.';
+    } else {
+      status.textContent = `Loaded ${total} images across ${data.missions.length} missions. Scroll sideways to see more.`;
     }
+
+    container.appendChild(frag);
+  } catch (err) {
+    console.error(err);
+    status.textContent = `Error loading images: ${err.message}`;
+    status.style.color = 'tomato';
   }
-  // Run the function to load and display the images when the page loads.
-  loadImages();
+})();
 </script>
 </body>
 </html>
