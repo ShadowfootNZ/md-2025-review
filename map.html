@@ -22,6 +22,7 @@
     background:#000; /* plain dark background for map area */
   }
   .leaflet-popup-content-wrapper{background:#222;color:#fff}
+  .leaflet-control-layers { display: none !important; }
 </style>
 </head>
 <body>
@@ -54,10 +55,11 @@
 
   const gj = L.geoJSON(data, { pointToLayer, onEachFeature }).addTo(map);
 
-  // Add Mimosa points as a colored overlay
-  const mimosa = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"title":"Joe's Garage","color":"#E40303","isPrimary":true},"geometry":{"type":"Point","coordinates":[174.78185449670508,-41.292189690157905]}},{"type":"Feature","properties":{"title":"Loretta","color":"#E40303","isPrimary":false},"geometry":{"type":"Point","coordinates":[174.77530972689672,-41.294044148279774]}},{"type":"Feature","properties":{"title":"Nolita","color":"#FF8C00","isPrimary":true},"geometry":{"type":"Point","coordinates":[174.77490203596696,-41.29488254887213]}},{"type":"Feature","properties":{"title":"Southern Cross Garden Bar","color":"#FF8C00","isPrimary":false},"geometry":{"type":"Point","coordinates":[174.77447289274116,-41.296317501677066]}},{"type":"Feature","properties":{"title":"The Arborist","color":"#FFED00","isPrimary":true},"geometry":{"type":"Point","coordinates":[174.77372169915301,-41.290497143373244]}},{"type":"Feature","properties":{"title":"Floriditas","color":"#FFED00","isPrimary":false},"geometry":{"type":"Point","coordinates":[174.7755886722603,-41.29357657759339]}},{"type":"Feature","properties":{"title":"Bin 44","color":"#008026","isPrimary":true},"geometry":{"type":"Point","coordinates":[174.77891393424025,-41.284354147668736]}},{"type":"Feature","properties":{"title":"Thunderbird","color":"#008026","isPrimary":false},"geometry":{"type":"Point","coordinates":[174.77676828569977,-41.28345136146265]}},{"type":"Feature","properties":{"title":"Chouchou5","color":"#004DFF","isPrimary":true},"geometry":{"type":"Point","coordinates":[174.7804594031484,-41.289868093231775]}},{"type":"Feature","properties":{"title":"Dockside","color":"#750787","isPrimary":true},"geometry":{"type":"Point","coordinates":[174.779450328553,-41.28428962288169]}},{"type":"Feature","properties":{"title":"St John's Bar & Restaurant","color":"#750787","isPrimary":false},"geometry":{"type":"Point","coordinates":[174.77919335626228,-41.28949734603456]}}]};
-
-  L.geoJSON(mimosa, {
+  // Add Mimosa points as a toggleable overlay
+  const mimosa = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"title":"Joe's Garage","color":"#E40303","isPrimary":true},"geometry":{"type":"Point","coordinates":[174.78185449670508,-41.292189690157905]}},{"type":"Feature","properties":{"title":"Loretta","color":"#E40303","isPrimary":false},"geometry":{"type":"Point","coordinates":[174.77530972689672,-41.294044148279774]}},{"type":"Feature","properties":{"title":"Nolita","color":"#FF8C00","isPrimary":true},"geometry":{"type":"Point","coordinates":[174.77490203596696,-41.29488254887213]}},{"type":"Feature","properties":{"title":"Southern Cross","color":"#FF8C00","isPrimary":false},"geometry":{"type":"Point","coordinates":[174.77447289274116,-41.296317501677066]}},{"type":"Feature","properties":{"title":"The Arborist","color":"#FFED00","isPrimary":true},"geometry":{"type":"Point","coordinates":[174.77372169915301,-41.290497143373244]}},{"type":"Feature","properties":{"title":"Floriditas","color":"#FFED00","isPrimary":false},"geometry":{"type":"Point","coordinates":[174.7755886722603,-41.29357657759339]}},{"type":"Feature","properties":{"title":"Bin 44","color":"#008026","isPrimary":true},"geometry":{"type":"Point","coordinates":[174.77891393424025,-41.284354147668736]}},{"type":"Feature","properties":{"title":"Thunderbird","color":"#008026","isPrimary":false},"geometry":{"type":"Point","coordinates":[174.77676828569977,-41.28345136146265]}},{"type":"Feature","properties":{"title":"Chouchou","color":"#004DFF","isPrimary":true},"geometry":{"type":"Point","coordinates":[174.7804594031484,-41.289868093231775]}},{"type":"Feature","properties":{"title":"Dockside","color":"#750787","isPrimary":true},"geometry":{"type":"Point","coordinates":[174.779450328553,-41.28428962288169]}},{"type":"Feature","properties":{"title":"St John's Bar","color":"#750787","isPrimary":false},"geometry":{"type":"Point","coordinates":[174.77919335626228,-41.28949734603456]}}]};
+  
+  // Build the layer but don't add yet
+  const mimosaLayer = L.geoJSON(mimosa, {
     pointToLayer: (feature, latlng) =>
       L.circleMarker(latlng, {
         radius: feature.properties.isPrimary ? 8 : 5,
@@ -69,8 +71,22 @@
     onEachFeature: (feature, layer) => {
       layer.bindPopup('<strong>' + feature.properties.title + '</strong>');
     }
-  }).addTo(map);
-
+  });
+  
+  // Helper to read truthy URL params
+  function truthy(v) {
+    if (!v) return false;
+    return ['1','true','on','yes','y'].includes(String(v).toLowerCase());
+  }
+  
+  // If URL has ?mimosa=on/true/1/yes/y, show initially
+  const qs = new URLSearchParams(location.search);
+  const showMimosa = truthy(qs.get('mimosa'));
+  if (showMimosa) mimosaLayer.addTo(map);
+  
+  // Layers control hidden — Mimosa toggled only via URL
+  // L.control.layers(null, { 'Mimosa locations': mimosaLayer }, { collapsed: false }).addTo(map);
+  
   // fit to bounds
   try {
     map.fitBounds(gj.getBounds().pad(0.1));

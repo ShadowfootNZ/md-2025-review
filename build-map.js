@@ -97,19 +97,19 @@ const geojson = { type: 'FeatureCollection', features };
 //
 // 12 Mimosa points with rainbow colours repeated, with isPrimary property
 const rainbowColors = ["#E40303", "#FF8C00", "#FFED00", "#008026", "#004DFF", "#750787"];
-const mimosaPoints = [
-  { name: "Joe's Garage", lat: -41.292189690157905, lng: 174.78185449670508, color: rainbowColors[0], isPrimary: true },
-  { name: "Loretta", lat: -41.294044148279774, lng: 174.77530972689672, color: rainbowColors[0], isPrimary: false },
-  { name: "Nolita", lat: -41.29488254887213, lng: 174.77490203596696, color: rainbowColors[1], isPrimary: true },
-  { name: "Southern Cross Garden Bar", lat: -41.296317501677066, lng: 174.77447289274116, color: rainbowColors[1], isPrimary: false },
-  { name: "The Arborist", lat: -41.290497143373244, lng: 174.77372169915301, color: rainbowColors[2], isPrimary: true },
-  { name: "Floriditas", lat: -41.29357657759339, lng: 174.7755886722603, color: rainbowColors[2], isPrimary: false },
-  { name: "Bin 44", lat: -41.284354147668736, lng: 174.77891393424025, color: rainbowColors[3], isPrimary: true },
-  { name: "Thunderbird", lat: -41.28345136146265, lng: 174.77676828569977, color: rainbowColors[3], isPrimary: false },
-  { name: "Chouchou5", lat: -41.289868093231775, lng: 174.7804594031484, color: rainbowColors[4], isPrimary: true },
+const mimosa = [
+  { name: "Joe's Garage",   lat: -41.292189690157905, lng: 174.78185449670508, color: rainbowColors[0], isPrimary: true },
+  { name: "Loretta",        lat: -41.294044148279774, lng: 174.77530972689672, color: rainbowColors[0], isPrimary: false },
+  { name: "Nolita",         lat: -41.29488254887213,  lng: 174.77490203596696, color: rainbowColors[1], isPrimary: true },
+  { name: "Southern Cross", lat: -41.296317501677066, lng: 174.77447289274116, color: rainbowColors[1], isPrimary: false },
+  { name: "The Arborist",   lat: -41.290497143373244, lng: 174.77372169915301, color: rainbowColors[2], isPrimary: true },
+  { name: "Floriditas",     lat: -41.29357657759339,  lng: 174.7755886722603,  color: rainbowColors[2], isPrimary: false },
+  { name: "Bin 44",         lat: -41.284354147668736, lng: 174.77891393424025, color: rainbowColors[3], isPrimary: true },
+  { name: "Thunderbird",    lat: -41.28345136146265,  lng: 174.77676828569977, color: rainbowColors[3], isPrimary: false },
+  { name: "Chouchou",       lat: -41.289868093231775, lng: 174.7804594031484,  color: rainbowColors[4], isPrimary: true },
   // { name: "Mimosa 11", lat: -41.3011, lng: 174.8011, color: rainbowColors[4], isPrimary: false },
-  { name: "Dockside", lat: -41.28428962288169, lng: 174.779450328553, color: rainbowColors[5], isPrimary: true },
-  { name: "St John's Bar & Restaurant", lat: -41.28949734603456, lng: 174.77919335626228, color: rainbowColors[5], isPrimary: false }
+  { name: "Dockside",       lat: -41.28428962288169, lng: 174.779450328553,    color: rainbowColors[5], isPrimary: true },
+  { name: "St John's Bar",  lat: -41.28949734603456, lng: 174.77919335626228,  color: rainbowColors[5], isPrimary: false }
 ];
 
 // HTML template with inline geojson
@@ -137,6 +137,7 @@ const html = `<!doctype html>
     background:#000; /* plain dark background for map area */
   }
   .leaflet-popup-content-wrapper{background:#222;color:#fff}
+  .leaflet-control-layers { display: none !important; }
 </style>
 </head>
 <body>
@@ -169,17 +170,18 @@ const html = `<!doctype html>
 
   const gj = L.geoJSON(data, { pointToLayer, onEachFeature }).addTo(map);
 
-  // Add Mimosa points as a colored overlay
+  // Add Mimosa points as a toggleable overlay
   const mimosa = ${JSON.stringify({
     type: "FeatureCollection",
-    features: mimosaPoints.map(p => ({
+    features: mimosa.map(p => ({
       type: "Feature",
       properties: { title: p.name, color: p.color, isPrimary: p.isPrimary },
       geometry: { type: "Point", coordinates: [p.lng, p.lat] }
     }))
   })};
-
-  L.geoJSON(mimosa, {
+  
+  // Build the layer but don't add yet
+  const mimosaLayer = L.geoJSON(mimosa, {
     pointToLayer: (feature, latlng) =>
       L.circleMarker(latlng, {
         radius: feature.properties.isPrimary ? 8 : 5,
@@ -191,8 +193,22 @@ const html = `<!doctype html>
     onEachFeature: (feature, layer) => {
       layer.bindPopup('<strong>' + feature.properties.title + '</strong>');
     }
-  }).addTo(map);
-
+  });
+  
+  // Helper to read truthy URL params
+  function truthy(v) {
+    if (!v) return false;
+    return ['1','true','on','yes','y'].includes(String(v).toLowerCase());
+  }
+  
+  // If URL has ?mimosa=on/true/1/yes/y, show initially
+  const qs = new URLSearchParams(location.search);
+  const showMimosa = truthy(qs.get('mimosa'));
+  if (showMimosa) mimosaLayer.addTo(map);
+  
+  // Layers control hidden — Mimosa toggled only via URL
+  // L.control.layers(null, { 'Mimosa locations': mimosaLayer }, { collapsed: false }).addTo(map);
+  
   // fit to bounds
   try {
     map.fitBounds(gj.getBounds().pad(0.1));
