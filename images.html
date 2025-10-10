@@ -27,324 +27,73 @@
 </style>
 </head>
 <body>
+<!--
+  This HTML file displays a grid of portal images from a mission series.
+  It fetches data from `points.json`, extracts all portal image URLs,
+  and arranges them in a responsive 6-column grid.
+  The `points.json` file must be in the same directory.
+
+  NOTE: To view this page correctly, you must serve it from a local web server.
+  Opening it directly as a file (file:///) will cause a network error due to
+  browser security policies. You can use `python3 -m http.server` or `npx serve`
+  in your project directory to start a simple server.
+-->
 <div class="wrap">
-  <table role="grid">
-    <tbody>
-
-<tr>
-<td><img src="https://lh3.googleusercontent.com/0kTYKJC_1Qaqy9SeTrFcPcPW4lvX6DWtEXEuYLck8OiqWhnJkYRv1e9u73ipceMOuWPZuw3Q8rfBn1Xcsj_sCxFduz3Hgr58vFTBUc3cVD5e" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/8V3z9psfcmi8o-AMdQopyvaqX7eNCRUR74Sh-Dj4AzMkN8HJaUu85mYRAso4dZ9d6uO4v2BcITy56tRRufKWqYjyANNh5ao-UqLuVkOwMN8l" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/ZhQLqYtt150_NuxtMTMqACxOPvIvs_cpJQfzkJUk8TCIUfsf2xzXKJPWLJW9B4NtgUJjlydVqgGcd4dNOOuvlEPfbcP9F96pBJ0vW3HNatlM" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/n7fR2MKkXUtUQcxm0jLXOXtZUUj2LmbNajUWyTr_sbCKdyIP5AVanlDXLuz-aw2sCee38U-RyjQ7wWReRG5nBX96-sobMLFvlrVvbmwdXRI" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/GlnpX6HjTcRHzn5CbLgwWAAGHYPi7UInFOd03eFlghPiiEG4q_ASz42LGbGNxNQfSjhywD3VuXW02pfJrkZ9gdzgWt7MeU0yq676m-O3he8" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/CS9cve77pcmdrHwzGXZ0WJzrKYgmxDVwBZiV1ZjqC5W20-Gx4MG4sxld_we8m_szEs7u4SK7EQCS2UcjiFiNFUGbZLxxOHKpcm2GogoeXXrP" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/soaRCaAVX2fHiraT8hrsVMW684QeHjZK_Cj6rQ85CFOwP5MIRzpjIDTB8po_i9fr1jy1bFUl7kvPwOx4xz8CY7nXjYqRk7dMC0hbswtdbTfC" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/tYQRRbeQkg315EVk6-rbyPXnOeKUKb9zXNrYvsljoWZT_f1CQfbC-AxhUmfarp6wQlmKtgXX13xKdTn1w8xFHm_amq-dL6qaNjbwPIfFE55Q" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/J5ClwrAu3zYTm_C38m6APZjR1-AujVj0dKXJHK-gU3F5hmY4n8WPfu2iHYhSLIQvF1YVPrIgrD7y3ZPX3MD8bg27f3cnRU0XH8fJMqkrUrcK" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/Aed2mc5AQ2FBwuh2coCRnjsXCoeiaN1hHgxmG0r3CqOBSWK8DQZldHyaPrXH7wUz34BoNQsww_Q-Q0fprRQY_y2es-qVXf2XEPEe_DMqHBwucQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/Px3A4jAjg0q5a2uI8NwXkqR335eF_0LlueJuhuoHTxOXFgYHZ5voLD72zEBhC5I9BOgW6eU0So5kZtVYiQ-RIIuUrBsXTIDUqP-d2tVz9oo" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/DfDDZtBKYU5Xm44E-2OdpiYSEgeIYrnE_hBr5npdTu5c40AP531ClYBXb1JhJmpKmCMDSzR3A_IUq6Gn5J8N9UvTWkcWgepRHswoBlV3IwrI" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/VPfjMJRLKQ5xLJ1manKfrGR0pTo-4KVMEux549xjpDZzMDxjMYW8ICyxlIaM_fT9IOdEJSP3W5rh6DSOBp_44veeggKAeB4-5IsfsmZYOZpL" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/utmGenTmzUL6J1aYzhCVsOA-4DXBSfoLqIoHkslFvc3b-bVj81onm7Ys4C1YX46CfWrfzJDcEWRG0yXEaUBoDdyQjfoikJtNpRM_MXPQ-FUpbg" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/6j0PGvM42HhsraFPAJiuofbLiClr2QmOLi7De4z-848HaulYhwSvfafCdwMmKrj06OZ-VpGZJMbqK18EJ3mU1myoNy_XciLLYSmFaOk5qnE" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/G8xyOE9A4DlaYPw3FEGucf88MmJovH2BpffJv4k8CWcRAGbifbxETYjF74HIAl7X-UpvQF2oA_mh1NYAQcSc_z9lIOkYknpLXmug1NhPe4Kd" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/t31IsnT9RT3KOc68KDvKuVhbl1V7bSD-PEBaY3OJ7beeV_IB06NMAEU81n2lTdYlpuSYaJMJiQixMHyRF3yPYq1mUiamrC7PDPgMUN4QUH76" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/lnxldkYERspZuOVQYuMGGQ8KMkwU4Z2RxXdz_RUopGEKvFmHvYtIEqWgwHDRPHRXXg4iymTmFXn3H-nFowd95avleECAI5b3-BxOBmQuJIW4" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/XKaS7aSfDU99GgKsxYQvXfdZTf8jD97pZJ8yMIlFJjqz0EerqERGlwLA2FTIf1Sn4Uw3FBKOffk8kHB2g_g_vzhMKDUwPmlgIj9ysR1EohE" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/6VcusedcElLYEWqBJec-_rM1Dgxvz-G2PdIbZlScpBEUSz6VRI7r8PrQi_svfeiiGRp-88G-a3EDXfdqWN9A-13OE3qR4Ity4vMc3NowKRke" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/eDyi3FBIUnjeVJPZXdywJXLVw2zBuwb8gWuMT8RP4Gjh7A0GbXnOh5nytFmQM7KlSupmi4GkGTSPK0yxMPYkC_4vtHoLRiRhst1zd7sJqmNj" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/EY3b0Zc4N3id0o7oDmhvYgtyYf3YC5NxYYXNlk_32Mv9p4Dj8_sprRdNaInWvlMKEYXMEE_1dsAoFm1VeYRNyocFr7ynp4LZleXYQGXie7Lyww" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/GlzeexCkWS26Gd0PUoMTe27LREDJecdci-UbL4CDpqC9x2pZfeIknLWvfx61Urdu0NI9OqT0cWiP5tglHpE_VCS7IIjkFGnV9azE9HXB98Ge" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/UMgRIhAFnkCg0SkcddmxAyzrk9hVQox-NSyDtskqle_2bv7Mwl99wfiKB6DP_-5W5vjXIei1Bhb74IajCHce55RCBDZ4ns47FJdGIvseSycz" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/bphPBrVlhVWhOltKyFC2Pv9uhipiyPVDnEHahMocbzPzGudtQ1s9jJVS6Zc10_toErDQWCJMZHId5oojhyDs2ZOLJ7u9zSJ-Jk9BpNJXIc_d" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/hlT1xNp2uUusdVZRPjOFQYsD34jlbeGHVFhM0vpVNDIYbzHtGC-w1ruv1kA31OI02PE-Ps4GhvXl79j3nNW2N35rt4Pny2dJ3DA5Sw8q3rE2yA" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/EVID8lZZmxsX4qn_OokWmsnIF76s93NOJ0z8KI3iHFsPqgNuNQBmYU2QGSBYVF8E3cW3737E5f-sXg-dlnt9ZW2En7O6dbwtLqn0IM6O_Q2xfg" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/o6ncTls642mm2Id1DIYIGbdxnAhDnmPH7T6Uq-mtQjSIYoG9ykCgeQjhx-sH85l3uCbbbJrkyStv20w6JmTSek6XnyoFA8SdVypbHadUvU_A3w" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/haOfTfoeDv-3XuGnFijX2uO2ZuVGs9g5ZwoBF1RD7S0LRks40s84JmsHW8Jd9g_R-v2Gz2N-FfGpZ4TvkeHkrDzpGfFPnizMcfv6IclC1ebGOQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/HKVOxPq8xO2Ppe1TcS3ckgj8l1us8-1nRevUQ6CWnlJNlk5VhF2N4czWlP_mY8kNDFVi_pD_k62a8RtrsUib_vOWJ_RmxoQwQv_r87I1XYxxDg" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/KhuCTa-OWAH3YPLF2mTpvfT44yNTT0x6HlvNZiFOSB0yfQwoZGRxfCnUnvy1rOQtqLF63WkrRBBU_GfCfcwnY39deT9pOOF5f1qC7tq8wWOb" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/nuEkyFWqXAZ5RZHytMSdOLlpxuZwkxm3XH_u2EP8MqR1LVjDP3MbdOk9FcIsYUF6OG-AtHhnV5GOTHN1pB4EVQDQjNjJtu9JruHvwCDDGOsU" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/YYsQQ7zlwm5ulElXfbTASy5fdTLsCLrs5i4YGyhU93aBO9FPfoZ39oOz-YUM0kY8jWqSuTTZuWlGlIVWiNkGFNw2Nk0ww-ELftiOFOiPijG9JQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/sA4c0ovsmLh2BUsHE71Ka-ZxJkt3DGC-0rvPT9AfxncOjFgpdpzsrbJqO5TeSo54YTxpRPAKeRdZRPuoXCLdp6LnG038zZYKrYcqZmtjvQpu" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/h5bt5HtnN2Cc_g3tfWSLt8pOvv69OXoaDbTIvFUnjjkgcHlSGAPf3tc08LdBoZyml1l2S9k_aDjGe-m8L7emfgY5b2b0yD1Nc1pNods0GTMq" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/lICMOAJH30Yd_95xXTWNmVUT_seL3Rraf4bED8IADJS4wiordYUi0_nJW21xxcAw7soyKwWDKpUf-CxlCHI2jOWgsc0VCa1BdALTivtMilk" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/kAB4F9dq2SNxsn17LPjjHpreN557mELVfwMtkxvWJ6MWObADXTmFebOTcPkbjJTqNnxOQeDHULsOE3s1BAUtIL1PHi82KT24llMw3SDEHw" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/C4z42ZkpWieMLphxRFi2DAzksXcaanVAQjI5elwKabIqMWql1NIXDzS1J1vp_Ss3Herc-Ut7bIT8Wmb-W3nZIm-9j_SrleScjHM-B_pIbkU" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/0apIDnZmxdFEsT70H0Jt4x10_TJ__whSDS26KAIcsvHZ1QWz_yY3SAcd2A-bzBmkw5NQ3iLS-KL0LuSz6cdXUy3VSPiESDWxp5-CckCJRmsgfQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/v7oiI7ll5SSwXK2Mv7VP_VI4deHPxWvqZoWGqHYuDvpdm880qWC8X2v77UK5MeLUkHtqc506RzRWVVDY1_vtQJxPZkgjcns9zAVawRDr0ig" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/iMLnhlEZMX8of60Pg2zvGxxcwLf0wKAupgTK94wp7QItlxguXo5FscXz1VZxXXK9HuaeJ4C650-4qEP7c-M9nGmth7L99TTATIUhLSYRH2LMUQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/OxwHTekfex9D0LFkeU4t2tI0YriwW5gY-ZsIZmFQihIzlIsK_BNW0RJzCkbbT1USc0LBXY2QuCLvS8IINgnSa4mr92_AHqHFFfD6INBzC0kv" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/FuTQRERzwhhBesP7ml21Idk4lnLaZ6OnbAxQhgj1lxyZ8nDQcebWk82TyH9_xbYgssiHt81lvIivo5OWEKPYXKN-gUJHCLvnsTY6LmWCXs8" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/foNHF_3H80yyUbpjnzpylpAG3VfOvJnsiH255pBM6y6-CVUaTSG1n6HKri6qSFkov0d9IFkmgT6onaO7C8F5KpykL44HkCHNRMFxzMM0UEh9" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/Uj5OmKfAAMJ55ZvI-n6eNARdKtzyvMK-IevtoliK27EqicTYozmUuGo2E4blTOXYTEx59t3W7bRahO9zSImgs9ChjXISStOCucrYVKt4Vcax" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/htARvM2ItNQWkdNeZ21husZYA8A0XtI311F0eDss8pEc_sWYBlmKG1PgkHODzq3SFDCQKCP92M9E96Y-n_Avk7PSN9JDKzybkN8MPn-0MJ68" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/FVQQ_WXHVM1Lc7W22ZmltZ_Yao6H7MvDHi8QxXfwUdpPWokIjnXoSZmqQSp1oWNtiXlne3wWOaBCVbMnk-JxRcZQiDVRdCsYZWOuiynSmv9z" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/Tzq24A5e6T_1cxa0jcNWP5xt53grTB7lrNR23AAj16X2ELPGSHklCi5rHb9lG96i4xu9Acq_2parbzB09o2HITXRn6w6XTIuIg0n2boTqpM1" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/KpQtJ2GZfDxBSE6Dp3gJQCwhA9aYBa6sK5ZIfohW8syljZer9ByavcbLOAf-zyaSXKqe1vkaky61iY1IBqH3KBBo7ndAzNDFDmCDrE3LtDKd" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/O6d81HafsBlWofx-b9O9Zzi0S39QTjpGV6Bp6nuZWkxNxGkOudJLcyT6FpcPIZ5POrxxah-Lef9nPgEyi71GvxaqfQycFE98WWpmj55kCUH8cQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/KUVzMtdKtYSKg5gdrTSIO40D7V4HcbJrQi5EquY1-LubEBA8Vg3TYVG3fL-3_IwG-tA7YKMUbomYZngvGBH9kNzoObjn3bt9c12Jbjgiv_vb" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/QIwb-x2r8UNE1x1Kuu8-pKSWOd2rk8SvQHASc0PWIdZ4FTi635uYUZVxtXjfn3vvbX2Eir7HjxYFA9Na3Fs2WPRKR0BLR84QR6U8NNAM583g" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/BxaDjdtyOjNmanl3wBigvwUUTI_iLSesAFUrO2PuMk76NUmZPavWiPlCh-Ii8EdI-UxG0Cuj-hkCuGlTpEa_a7uTfb0NPdstd8hj6Pvs_0gONQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/66EEutNaCOLR5Z2uq23hLy6G72nS4aXYwesRwZnKt90UVcqfRWLHYS1ZmRtc-1aoFETs0YrLRFSQDCRImq6K6yhi-0_1JtQoTYiUJxzah2w" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/t0qzvWvglT6BZavsMvKP9DrwzFub06SEgOmm1lxeiK35COfGhygdDIV-89QxIJdBKd40lewAgzlAYeRzuUzFFy8GX6aUq82TfwGmVwl2xQ4" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/KnN8WpjJFhDR9TJ50ONyghSwG8qV3d5rLmmkhehOToQQfeTbgeWeq8hOThGXnjnoWT-jDCfC9BZPSoxdUAKv1zus63Mk1Tcf64RhRprWI873" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/xZqeM-_XaR2JbM-Se9RkHkJ47DXy9lOuOOkAh6UbiY1TsROlPZXWmvSDa_MwDK9CpnsAPE8iVb2B_PQ9JNK4IUF2piUzrZAgGVIgdK7EtKBZ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/wrBPkH0c_YO8IrJfcLmFW7jj7NxWEU4y-tnXqOZurOhuoV83En_ZzYwqC8fdpYPXuwVBYTwXVcjFKCTP00mlATvDDUnvsMF_x8oLWAqivz7-cg" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/l-LKI4t9KOh-kpNLBiezpdk8YbHTvi6-rjwh_XZY7TJ_CbpKQfJgyPn6mVr73Xoct_xIdeR6G4HZkYcTKyI953Dzgmnsjn9xkE3BJxdJsY7k" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/aHXi02cbxOuenRjhZJPOvmWVNQXbEA3reHd6xWE2-s8XNtWRyobTi47zhuvu_PtPiZvEadqDafohsICAMBLhetbdvPHWY6EtcLhEqz8VLL0" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/bc6R19AY9grQRHlK2RMpJGvGqktIw34JMCbltMkw6bbhQZplzjOEOgDq4SUIotUIZeij4fG8eea7-RI7rXf0_L7N8SUwDarSo3tDuS1v7YU" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/wn2k5UmuOLPdAS-5dHRcmiimLDJiSpmRXfDR66iBCIBbtV0cYMYqdKH22HJOj9q9liFpJu44yO161h-Uv0c9VPKa1M7jIxGSalOfoOtHQSfKtQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/NpvBRF_lEbJoKgEfcIt1KyXg6wI_eBP26ZVgcBnU2Nncu3h6BA0X9U76akJlgfGVk7D1wv8JEYaLr6bbUWf5eXCw3rvfAjhbI7EzPcbYXYU" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/GKHjdgRi4UL33rKpXY2s6TZmjxXc7vfnuSEk2PaXBStaNCRtRmjV7akO40YAsN3AezKyx0aJ6OG1VGoqReaMr0HubnpDMB5DLTGb4S7PAe0" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/3QTKruO9CupLX1xVVogl1ip6bvWR-NeRGbaxIjaM8ZNp3tb9TeqbXGkRyE1tVzZftjiejrkwEBG9nAw4MOpG1qGZPXA4XBVFg-e4IpMHzoR_" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/9-svCKyb6iXrUyBYuA73iZ_lvxm1UeJ2HNGudK0Y-kEEowsCcRT5yk915jVXbG7SnbmkgPIA4sDaoOhZV7tqU556QsTBR9D42fOE2jL4q0gx" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/iuPWv9z2VIe1xcw0loJb-e5nDtBlJqjz_OjkgM-oJmxGlIo_jcKYI_zpN9HIb7zOdipKgSuRKIugFFnDsuCmRS8WLBWH5FL8QtFuDOt8DYM" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/Ng0BxuktUkHOgz66eCYAVjgz9l087c-7LFZ_MbryQfcoL-DUZnUsVhJ-hMOurPcb0kQEpelaKQJZT-b4QMvj816N5FFHD5pK1BCw25cPWA" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/9FcSKIXpjJ5zU4S8z-yP6DDEuiTKcmAzrTE5hfrBgjJB18oG3TDLFxe1dpndSuFfhloJiG6Qq4gtlJuCYXuoQg0b5pY_p2uEpwwDYVNo_eGtag" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/Jh5E53p4HF1usq48LTnoOcxIX2606Tr2YWEx5xnDYkzNnCDpnx_dKKCo58Ww0-WvSKo82MFWG8WHSNioYtElZAaF31VMQcGLv4jwKhxmrucr" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/ZyyDyK5LsC7N7oI3onpk7y4kxVy0HjfNe0cwUnmLb88vLW2AnJp5OMh2CgS_yiDfOZiIidkMDlrA1FGZN759J4rKFh0-BTp-zevzqzDwdQM" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/SutNpnc_Rr2PpofW0NQ1IKhjVs4zsQFH2pECqfHmr2X15kf8LUYvNFfAwWbKidN1QYBLtelD71k1Yqbu-fiPZ4DnX4M0k56DLBPZnbkoJfnT" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/Hu84s1VhKVzfZzXProay7jyIweo90adErLMUSOXixb9YxbOIIIAMNb0y7O9N74cBxMp81jpGkX07ePKwdS5mFtwwG9Y9XFUSHbBorQ-ARVl7" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/COy-DldpaCXuTyl7uIVliVOWD0FNtmKLGchqGOddUqiOnhxxV922qfs4gfqu0kDF0uRxupayT-KOJWkoGdi3JaoDgYsZQpk8PToczcuLFoctmA" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/D8Go62AfKb2eCpgSgD1vOQUhJ4wIqxnvTL0fMus8Uox4gXTdTwqiK9UhXH-U14Is0pSCb7qZg5hC4MXkOp3pHkj1hisvSQ-Gfn82c-3y6PQ2Kg" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/FBT4z_-GadR76Itx4jQbl13z077ZgD3MV13cx6j6Gi-hXXk-51CrfKQA2ReeWOa59NP1MPsgcVMZwX81DSMFiXyMgx03UbBE-5P2PTH5Mkmg" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/TYJWrSZSYsB_t8_9hvnHKlikXJCZoCGXmwGZ4pZ7eMz5YxzxvOi8SJh5z1g3nSyLCs_KjUQ5XMo0sAxAhEY7jAh4jZDX-317vNUdS6vLOcw" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/ZpAP-iTBUmVZaZbZ4ignVBU29XYqnp9EIsU2HjWwNL-s5Vu4BGLSjP_vJWUUIEj8sJpIt0vfUOsf9ewU2pbwiTvIt56nbRnvDQ2mjgRwULE" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/PFySkmBlgTGRLYXbClg0IG4StCkJJ3HmKorzIM2UJUAAOdjVvmtg1WWrv_ZS2K_plPDUdrlZB6gVJXCKiYFR1YzcR3rRaMnKOCnBsyOpgeQP3g" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/TYXLbjD_JMWJC69OlPBkMb1Wq2BSQ6sGsrKviLWFqiIuDHpJl7RXtIX4yw9uBoO6cQzP_9Yi9XJ5JtJhj0bIDSB1DQb1vbeavPNOMoMOPiHx" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/UXTe7Wkb9khOViOYxvfX3mB8trsLYR0eslNbzMMxNyGyFdVYuaIELAWdqwddZ9aCqFRhOi_0pzbVkzELRKWiuiaBkWWu8GLkjjcBCjyObv96" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/1wRJfqIBrh7JAkDOQaTRKXPR-QHBjaWwnjlETdQU4DKOcAFx2f64D1pY5r4m2H2JWLCVsxZggUxXOC8PfzgFDizjShKwsB6Wx5L5bL_LWIbc" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/p7qcb2hHnaFZpFWkZ9DgnvcTjPGOswxJ5A4FGuUrCkRZjhEGqsEWiQoL_lMqk7LwbJwzGicyNw2i2pIM4cBjgggFjIAzXJOTfI3Y0bx36B1v" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/d7L2JbXXGPuIKNE9p0retRY8EmF9L9YCFB3BzumxYMNbjDRONzGaCBvW2FnhD8KhIjvaCFS67B1lFmaM4Yug0w0DLXNVofWHn956xWd2axf54Q" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/zGOQo5aBJWrTUwZW6wkn8xXf5uO0jwh8y3m6QvePXxE812Uhyote6xyc4pyxqRqFR0chquIqiEGoAoz3RQscgh69COU0_xfyyPiuAoZmhbU" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/bRzSHSIYWOoDIqA2YPUr5Hu7vRMqhBE4-OHshaFrGMKOUIsXAGX7_KTsAmY379_w216EGm2besOEuOci5sfaoBS5nA-n_6m0_FVxfpOhgsQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/jpm6EpeYfO6NcTcE3dzls5IiyVkYSxa2rYdmKNFQgrztTDSy42CqhzaL9tgmVMuwj-9z-U3mDngGVMt1_8mYlNGlMQE19my-r96JkxOfet3LTw" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/n9byZbm7dHfWQCsBebXkrfYEZRZJAJT9uBqZyzONLOzlV0F0iYQCArgTOSI6XBXPPyI6W8-BxRSAPH5GgUIgPxMaSr1pfq3yK6BA47jq-udK" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/cYtwOUyO3ogaOUCVIvmxX2yJSnj2VtXT81i0MXMNDjT6bS2MyW3XBSFV65tgKMbCNWr2s7aFkLOzWj1fhrmlzOO3uzYK23xNaGi3KJiWXYazWQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/2w69dKuArzPFmP4Y_eoSIQHGlHuO-qarPQEGmpki7ppViOU83KIYdJJiug8ukE25aSIK-RjPKdeHfV3NkEcfMtPF7Sh9tV_j3CZhtqfjSkpIxg" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/7DwvCxw0up3Ow5Z6e6QNJTFAZgRoqEOxO0ml50Dj52_GBblCgTJ-VVl7c2MOvQ_hbMqbl5dxMDVTk7FF7Fw4LRNLsH8V1RFk575GXBIkC3Pt" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/AcEEVGM0zZiYokpkD1MbtkAZM_1uXkdNBo0d5wBdyFKwiBjt1Mm5M85U9z14s44I-qKxsmsEshmOS3MveZwAuowiS6AiEyQ3_MZw41q6gIsS" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/5zsbqL03-VIXKpLDW6GganBgetRmXHB1GPXKmJuQZoILMezBrqRQEqwT7C9IW7cmccCzOxTz79rwbdW_bpkyPeelljxMaw_KakGaeDYl-jrS" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/HlSXVnsPDuPvlL4n9lOEm5i0RkuYSQrRptogOCniyIbsMwwNbtl_sik0cvyY3AxSpmkUYVD44Uv5I5RQ3Pm-yLRz6XzpSmA5Ph6MikfQfNQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/cB_TiGKV7EOG_2qQctQvLDMn6gJJFxHGs2LSoZNCXuydfrDHWGVJHWxA5vDnRguiyWqNkbq_7G0w1p16QH_qd8SX6eLKcM12Arwn64cVhZA0" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/oYJuT_rtU5fuHPApj5iUslo5A9F87_8VfEHfawN_GRJgI2TgNwWpDuEHiUcYbUWiS371CmPlQfSyP_BapO5UU0s4qwanVyglVofGjjmBGuhR" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/5DMWMLw8BvErCka41jfyT3H8HYHmf0Fi8qjOED0LbQQL4dKUCl-df3k-Qq9kQtoFG9mpveIwqJSL4S241TcCnYQpM9By_PVxUr4oSJbJ0fQo" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/5U-OQaNWuqQCv0CTWVyzO-cZYqCDXZIyxQcBHZwggf_StdQW5Bl_mjdHCJnhmEIrliLvMrcF5arIRnCB5g1RHsNFHlpRJEcsm0dNSFJ1WAr-HQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/22DR1uUomf1E3fDC0diMUSqOMZaLzTwHj1J-F2fd581qP5uVCd93j4kuPtOVGVuq_I1KenTTYpQpDkvJ4C6qv9ebkl49E09lZ06MsCyM0ig6gQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/KjUwkDvdJdG5hPiRwVlvVSYmGGzVm4o8t_e54-IeogSb3wlwOG31f3N5OxhaUF02OVpCO4u7jDayT5XmbZnbaWX1z-Cbmf7MHl3YMS3ZhCt_" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/Pz0X4YwuedjTFiSvhtuj9Ds4t65mMwalfYUBvOy5q2-0eV-uZ7pZb3YBCLhaobfU6krt4gnS7kVMukenLdc6snd8Ea-vzcMP59MhEOe7owwlBg" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/cYzycex8GLLaLdF9uVg9ky1Coi7RtIq-CnAF0NWIZLPPc8GaPvQcHGPQDO1cc5xg2eAQobumWitiwR_sz1Z92FmfUPuTov5qLeOBUIIJspI" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/cwmSN07b18bxq0uKz4CiL5wI9lGQ-39StXiDPdkmg7USqYir69g2oh-WJwDfJuAukeKFr1kVv9bWkqk2UzKyC70XLvHLLkRmsYXqPqmHgOv_" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/dbNM8UWkcbURWrBsKlMfC_SU2U9_qGuMU0b5ZWeYAAf5Ph7QQ30jHUchJWOz0_Gy-ogL2Y1JPfov2zt-03h1KbFPjuZYw_yfEmI5p1Otyi2M" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/u1vavq9HeS5W5ULW8Q-T9AR2QH-1CfhZyKYTKLMZaRNgpRsUs3WPJxC2y_dgUqfBIaCJb3exsjztVhq7drFkzWLHI5WBtHUJwyaB5CTG3p0" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/8cWKDxrY0rTKKkyYDxk6sk1u2cVkYtkkPJxnnqznI5HVMqCDzqd2TCvhWNVNR0Y08O5APf_qbdC6qWhOLTgS57oEsjVyNjMJOKu3mO3B4wA" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/TRXcgo_3bIbgNljHI31w5Ks04PFu3DZ7nB20S6z6mcKhvORmOqfAmb1Ldj7Z8E58bLJ0xMO95IWsLAl8rcNmY13rMImNGhiHW4PzvByO3xkP" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/NJ_ue1i4NZIdACu7LuMbmsmyPCI_QnwL6DmviBHXEE4q7sB73tEwA51U3AiePILMg3SZ-5wUvaneHcHDfZ4yz7LjRwcI5ejuwgjG5RmaCxQ" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/6A2ZL_5YJSaMtwFo_KUSv5HSThxlUK8c-11twhj6s4VCVK1DRI87fZW8ZI1-OVuM-t2F8MSHcCoCLBEFaTIdxND8JZEntcXLeGZVgndQSstZ7Q" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/gaBeNNSW8zpud4OBkYrRtyDIzlKO8i7GPR45lbr-0xbE-pke2yFSN3iEh8vnEgA5VbNu8ZhqQdMH3oTMzdRFOCty9QqJe3ZNidZzMlNj30txbQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/gxX8MZeXhxC9iw8v70-8sf6fXuYUau-BysaGc2Jbwa6xW3PLQ8NwDCILST7KFiD5I57W3hOG3HITqTxiCnLYQt1Iz7XH8ItPNzrjyW-1_diV" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/T2pUC-r--aRRh8n6NX4cPrzpznHxPmteawxGcMJrztM0ZGdMZHKGJV9ZYea6Ho5nGWUR38kv7FKYkMR4KMDBr7DJJH2s4qcCqblVWqzAYnQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/By9yjWVBXneUnHReBV9soeyw21P6o3OtRzFRLQHF8h013Nl6-6JynAhUbhGG5C-GzLlQwJUX2edHJ_7oDySXsmQydcJoKdpxaQeUJj9TiGZ6" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/6yzi9--qw9VOrrohbBKozwoKYY830MuWZ4_T-UQxcE8laSk6dfTatmCYu1AfT7KvgQUbjjhfstv5b-KRhvT-kL9KUItpnOY159smaCEZqGp7" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/6e5vVGUy9CgX6Epr4_5sT9JqLGsw98KJg2PrzAIgI0xmLgpXH74O7Jh2-zFfi4dPfCd-vFauRhLqdi-NN1eSIddyZMDv_XYGbeKREeFLuGWa" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/T4W-WwIZhDSiFt3v_VDm0CDsLiy2dX2P8MR9b81hgLrGbwhvTaMz9xV9NOBLBxIErEA4P09oQyH_rYTg-zlCHwpv61o0rEE6FexVPk2jhEv3_w" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/XSOTrPotn26eWj8XHLBxv4IL2518MCi_ICcxuWbhDuVtMJIaobTHOIdMehNPIilEyC6YAPLiS9q8BYmEJyvOuVfKNYPFEtKPkDPL3uD605mV" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/m-ikEjCFjd3CW2m5tfYDl6JV7OJYl3kjVGkdTCqJIr1820ajXkT9XfkPjrRDuXiTJ-mWpP1EJ-OLy88HhceCnj5o4cpviFK_fMq-c7bgdqZLOQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/nASLGVgV7OSp4vnBG9WmU5p1ihZyJjaiYJSgN7sAx9sEXOp3Ka0Pc4sCkAJL-xVyWQUTYjfI0hdqiORkfD0l6DxYYd8V8fmX58BoAdztDo24CQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/YDaCkEHUx-R1hckTSfL-2yBFLg3Z2YBla4n8q7_f9ven_KZiu8vsowWLGBUCyKCyJaXg3HA9NjQ_flDFmaVkJFrmqNPPH-jdqj1nzKRga1tz" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/R6JfK5vEloVnySjCXVdEnJ_FZKTP0QiaSFdd7d4kMOizRCLQcNoNFRiC1X1U2BItwM2hVGrZv6ZVVi2KiddJE2YNTRT_SqDSgl8lN0B15X0YvQ" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/DqLBZOmGdGb3iyhllwNbzPuida7MP7ugFSRB_UvVZnfdYA6hrH0ztgay9-KetkjvyEUVL3hiVfFRPgZPFrTx48pc7xW_QV6MD7wd1xtrZHAk" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/1ohakAZC_mXJTDlJoMWrXxnmTOmXX6yq5KpImyApagNR25gdaLAEFKaw81XNeubVnV95OUNkuZRPJdXVwUcxLnyEe0w78SCv0qHW_UG-arI" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/-c_NkKFivjzU3DuyTxjGchkxaT-fgCAfCTTvhEartBR1i_9j7LHHq3gNajhXB1VGdRze_tSs4GS_sYp90X434Wp6zw77J_yoAl23vM4daHc6ew" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/q0AKFHrFB3Hq3UzU-kyRcrRYhKXZBIfaJjGQhb_i4xvYGDtnWxoPihy3ebOZMVxaCLKHFPY9Yv6MKDTyFV5Zvmh7Qed7GhLBvfnedqMbh7U" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/cijLTPJ724gRh4ue3C_Gks30QC7AqeaM1tpwDpjwFzzDymKFJodO3pFVj-X-R99NnL8fQEE7o0eXBMYzv8Kyr063yRqGIN7WRBvXmHIuIrY" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/eLV6kbSJhWzCUOru0WYHKHPMz9LDUEf_LtyNERt18iFcCgC7T9-Yl3Pb4PWeN0dBZq3vkR1ktfMiu273oByA2hzpPJJHaNHE3Vo9nreJEeXv" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/biGPPyQurVvXqd4JHFHHkScliVk0kqvB776onnYNEH_xb0B3TIjZTaaE1-0VkiqtjPSIAZkkILkfJyzxpDmu6un9l7VvEeGKqnWltLpgFL1d" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/waQjPhr-qRyT3HocDHO3J8-0M22pd-eVBsvibSVpDWnKCIaftqVO55laMjX20OGbQv1mkcBSUXjGAxrCMKiNuhg79H-QfBz_mbI9HRZR49s" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/RVhdjkRDWM6QIeyCsMAotIUa-i4qduom0iT0n4vbFCHRCEyTeLdJrXu9NJrQDAQPUybstQFKrTnI-xgQIBnVeKBQCf7S07s2u0OaZRfW0JHw" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/939fHukOG8nRmgFLeh-lnTkvIDs5X7of9q9lbxmggCROO3p2vQl_wTptjXR69ZurNO0q4FpNEVHuII79JJRtppCIzQ5Wnxme3Cd-RZUGYBw" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/cjtNnV7pzMvb4eYSlHuzlrFkfozTzN7OHt1NTNP-zBSijMObFCvI2AiqnLIVQqAEmE824sVqok_yAP9NX6uvtdopaIvMJHqudRjYsbgDZ4g" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/hM4ElGQNVt0qr8TGWyWlOlrAGpjlrZcKOZs8J55OEXf349q5pxwgJCYOoxTiE3uKHj8zRPP7WBr-995UtV3hvs5SjyeDeMCAgTv6ULdldl01" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/MebIj6H888owYrJd9VOfqgjnFMqrBhf-C3M8OABnGT9HUXYeVlMbxlqa-Xsxb9fGLRrgZag7hQQV-2qfI8PqQZwBXfLJV8sj1hTZR3_tqexOXA" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/y1f7mOgIFmwtozdgYAtDuGagka77iEQT7KiGrYTxAl-jpIEutWc670kqSMexzA_KeKZc7lluQPqcL2HjGejBB6zCL6t39faFn86AfG21Su8" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/NN-B5PESGRY9UBbDCPhFXgFNM5l7lnlZ8V_HhGCko6R_9JY9LNlrIh6zyyN79r-BDy1Db6rR04nsOEOwJsJN-b42iUEf8PCyJAFAPETZOm0" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/V7ES4GoMRK81is9Wl-Vsmrfq2wbqYE4yHqXSQak_yIkVBX0KzotzspzNR7B-n63DZVG8lagvzG00khusEsKzyx_u_UaT3Z8WRYJ_EU8FmzbO" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/kd0kJZXVUrNJVNy5GNqj8eTobukARHIshRTVmwUGNznOzSOMbOqhZYYyZEm95z9vzMmTkpw1Gtj76q1JuiAAt6DBp1ulWszovQcdSUZazaKm" alt="" loading="lazy"></td>
-
-</tr><tr>
-<td><img src="https://lh3.googleusercontent.com/cNzhQgllLe-hUIQAYIsB9ucw_TSlrDr_rf2RaaAjSv05YmDvkwLIy25m1kUhOGDUClOzSHOkCa6DitncOU_3FKxMs0NNwV6w9Ztw4wsjLQb2" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/KwDKP85PfTFk9ZKf0oPEmiaC8aU4Hv-rq0M5iVeuJgCGbTSW0a_MKCCFk0BUXVZ8TTo0tID-mFikn6loLqtHeEkDePi2QNEBm1dV7A-tIj24Ng" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/qvHaPOZt_adAvgPwDqoFoAGTJltHYproIaP9XEEHTMJ38qCsx-kfNGIh56yH5ZlvqWmaXO25qapV_0I-ofZZHuxPxQvF-TzNXPcajwJHUagY" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/Fm699ydG3h8LUuT02nnQcv9u2VNoZ8DD2mQVZrIave-nMUwgurqYfi9RETi9B26T9SYMy90qxkRc2umJZuNAQvYoC6BAGPV1-BDSJm7ikWlWjA" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/ZYvyIWxxoMP-SJunli37xaDkCNjS1S_wVmZar0ATADWmYjrZb-yE0UgG1ORqAyg2B2ORk4n6uIOus11_seuz_Cyj38Zk-4fo8v0AmP-Pbp67" alt="" loading="lazy"></td>
-
-<td><img src="https://lh3.googleusercontent.com/olvP55x0Vo1fwPAeDBL5QZlNnXh7ERaVQ8fXhaO55S9V1GnkDCUCPIvjQaeSPL4c4HbQmW59AGnMPADW6WiSGJ8d1YexEeUff_uRvF_tIlTz" alt="" loading="lazy"></td>
-</tr>
-    </tbody>
-  </table>
+  <p id="status"></p>
+  <table role="grid"><tbody id="image-grid"></tbody></table>
 </div>
+<script>
+  // This script fetches mission data, extracts portal images, and displays them in a grid.
+  async function loadImages() {
+    const tbody = document.getElementById('image-grid');
+    const status = document.getElementById('status');
+    status.textContent = 'Loading images...';
+
+    try {
+      // 1. Fetch the mission data from the points.json file.
+      const response = await fetch('points.json');
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+
+      // 2. Validate data and extract all portal image URLs from the mission data.
+      if (!data || !Array.isArray(data.missions)) {
+        throw new Error('Invalid data structure: "missions" array not found.');
+      }
+      // It iterates through each mission and then through each portal, collecting the `imageUrl`.
+      const images = data.missions.flatMap(m => m.portals.map(p => p.imageUrl)).filter(Boolean);
+
+      if (images.length === 0) {
+        status.textContent = 'No images found in points.json.';
+        return;
+      }
+      status.textContent = `Loaded ${images.length} images.`;
+
+      let row;
+      // 3. Create the image grid.
+      // For each image URL, it creates an `<img>` element and adds it to a table cell.
+      // A new table row is created for every 6 images to form the grid.
+      images.forEach((url, i) => {
+        if (i % 6 === 0) { // Create a new row every 6 images
+          row = document.createElement('tr');
+          tbody.appendChild(row);
+        }
+        const cell = document.createElement('td');
+        const img = document.createElement('img');
+        img.src = url;
+        img.loading = 'lazy'; // Lazy loading improves performance by only loading images as they are scrolled into view.
+        cell.appendChild(img);
+        row.appendChild(cell);
+      });
+    } catch (error) {
+      console.error('Failed to load images:', error);
+      status.textContent = `Error: Could not load images. ${error.message}`;
+      status.style.color = 'red';
+    }
+  }
+  // Run the function to load and display the images when the page loads.
+  loadImages();
+</script>
 </body>
 </html>
