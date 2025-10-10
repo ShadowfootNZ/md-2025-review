@@ -27,27 +27,39 @@
   .wrap { padding: 12px; display: flex; flex-direction: column; gap: var(--gap); }
   #status { margin: 0 2px; color: var(--muted); font-size: 14px; }
 
-  /* Horizontal scroller with one column per mission (so we can have &gt;6 items in a column) */
+  /* Vertical list of missions; each mission renders as one horizontal row of portals */
   .missions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mission-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .tiles {
     display: flex;
     flex-direction: row;
     gap: var(--gap);
     overflow-x: auto;
     overflow-y: hidden;
-    padding-bottom: 8px;
+    align-items: stretch;
     -webkit-overflow-scrolling: touch;
-  }
-  .mission-col {
-    display: grid;
-    grid-auto-rows: auto;
-    gap: var(--gap);
-    align-content: start;
   }
   .mission-header {
     font-weight: 600;
     color: #ddd;
     font-size: 14px;
     white-space: nowrap;
+    position: sticky;
+    left: 0;
+    background: linear-gradient(90deg, rgba(17,17,17,1) 70%, rgba(17,17,17,0));
+    padding-right: 8px;
   }
 
   /* Each tile holds one portal image */
@@ -123,14 +135,19 @@
       const portals = (m.portals || []).filter(p => p && p.imageUrl);
       if (!portals.length) return;
 
-      const col = document.createElement('div');
-      col.className = 'mission-col';
-      col.setAttribute('role', 'listitem');
+      const row = document.createElement('div');
+      row.className = 'mission-row';
+      row.setAttribute('role', 'listitem');
 
       const header = document.createElement('div');
       header.className = 'mission-header';
       header.textContent = `Mission ${mi + 1}`;
-      col.appendChild(header);
+      row.appendChild(header);
+
+      const tilesDiv = document.createElement('div');
+      tilesDiv.className = 'tiles';
+      tilesDiv.setAttribute('role', 'list');
+      row.appendChild(tilesDiv);
 
       portals.forEach((p, pi) => {
         total++;
@@ -208,16 +225,16 @@
         cap.textContent = title;
         fig.appendChild(cap);
 
-        col.appendChild(fig);
+        tilesDiv.appendChild(fig);
       });
 
-      frag.appendChild(col);
+      frag.appendChild(row);
     });
 
     if (total === 0) {
       status.textContent = 'No images found.';
     } else {
-      status.textContent = `Loaded ${total} images across ${data.missions.length} missions. Scroll sideways to see more.`;
+      status.textContent = `Loaded ${total} images across ${data.missions.length} missions. Scroll down; each row scrolls sideways.`;
     }
 
     container.appendChild(frag);
