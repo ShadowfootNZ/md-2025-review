@@ -123,7 +123,13 @@
   const container = document.getElementById('missions');
 
   try {
-    const res = await fetch('points.json');
+    // Get ?file=filename.json parameter (default to points.json)
+    const params = new URLSearchParams(window.location.search);
+    // Get ?file=filename parameter (default to points)
+    // Always assume .json extension
+    const fileBase = params.get('file') || 'points';
+    const jsonFile = fileBase.endsWith('.json') ? fileBase : `${fileBase}.json`;
+    const res = await fetch(jsonFile);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     if (!data || !Array.isArray(data.missions)) throw new Error('Missing missions[]');
