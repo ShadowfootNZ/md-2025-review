@@ -1,0 +1,1644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>MD 2025 Wellington</name>
+    <description>Mission Day 2025 Wellington</description>
+    
+  <Style id="m0-point">
+    <IconStyle>
+      <color>FF4B19E6</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m0-line">
+    <LineStyle>
+      <color>CC4B19E6</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m1-point">
+    <IconStyle>
+      <color>FF4BB43C</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m1-line">
+    <LineStyle>
+      <color>CC4BB43C</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m2-point">
+    <IconStyle>
+      <color>FFC88200</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m2-line">
+    <LineStyle>
+      <color>CCC88200</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m3-point">
+    <IconStyle>
+      <color>FF3182F5</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m3-line">
+    <LineStyle>
+      <color>CC3182F5</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m4-point">
+    <IconStyle>
+      <color>FFB41E91</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m4-line">
+    <LineStyle>
+      <color>CCB41E91</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m5-point">
+    <IconStyle>
+      <color>FFF0F046</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m5-line">
+    <LineStyle>
+      <color>CCF0F046</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m6-point">
+    <IconStyle>
+      <color>FFE632F0</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m6-line">
+    <LineStyle>
+      <color>CCE632F0</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m7-point">
+    <IconStyle>
+      <color>FF3CF5D2</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m7-line">
+    <LineStyle>
+      <color>CC3CF5D2</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m8-point">
+    <IconStyle>
+      <color>FFBEBEFA</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m8-line">
+    <LineStyle>
+      <color>CCBEBEFA</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m9-point">
+    <IconStyle>
+      <color>FF808000</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m9-line">
+    <LineStyle>
+      <color>CC808000</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m10-point">
+    <IconStyle>
+      <color>FFFFBEE6</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m10-line">
+    <LineStyle>
+      <color>CCFFBEE6</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m11-point">
+    <IconStyle>
+      <color>FF286EAA</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m11-line">
+    <LineStyle>
+      <color>CC286EAA</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m12-point">
+    <IconStyle>
+      <color>FF000080</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m12-line">
+    <LineStyle>
+      <color>CC000080</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m13-point">
+    <IconStyle>
+      <color>FFB1D8FF</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m13-line">
+    <LineStyle>
+      <color>CCB1D8FF</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m14-point">
+    <IconStyle>
+      <color>FF800000</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m14-line">
+    <LineStyle>
+      <color>CC800000</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m15-point">
+    <IconStyle>
+      <color>FF008080</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m15-line">
+    <LineStyle>
+      <color>CC008080</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m16-point">
+    <IconStyle>
+      <color>FF42E4F0</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m16-line">
+    <LineStyle>
+      <color>CC42E4F0</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m17-point">
+    <IconStyle>
+      <color>FFA7794E</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m17-line">
+    <LineStyle>
+      <color>CCA7794E</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m18-point">
+    <IconStyle>
+      <color>FF4FA159</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m18-line">
+    <LineStyle>
+      <color>CC4FA159</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m19-point">
+    <IconStyle>
+      <color>FF5957E1</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m19-line">
+    <LineStyle>
+      <color>CC5957E1</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m20-point">
+    <IconStyle>
+      <color>FF48C9ED</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m20-line">
+    <LineStyle>
+      <color>CC48C9ED</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m21-point">
+    <IconStyle>
+      <color>FFA17AB0</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m21-line">
+    <LineStyle>
+      <color>CCA17AB0</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m22-point">
+    <IconStyle>
+      <color>FFB2B776</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m22-line">
+    <LineStyle>
+      <color>CCB2B776</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="m23-point">
+    <IconStyle>
+      <color>FFA79DFF</color>
+      <scale>0.3</scale> <!-- smaller point marker -->
+      <Icon>
+      <!-- Default Google pin. You can swap for a custom icon URL -->
+      <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+    </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.0</scale> <!-- hide labels -->
+    </LabelStyle>
+  </Style>
+  <Style id="m23-line">
+    <LineStyle>
+      <color>CCA79DFF</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+    <Folder>
+      <name>All Missions</name>
+      
+  <Placemark>
+    <name>Tattoo Museum</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/0kTYKJC_1Qaqy9SeTrFcPcPW4lvX6DWtEXEuYLck8OiqWhnJkYRv1e9u73ipceMOuWPZuw3Q8rfBn1Xcsj_sCxFduz3Hgr58vFTBUc3cVD5e" width="240"/><p><b>GUID:</b> 422d5eb7e7ef4efabb2dd328d2cf5408.16</p>]]></description>
+    <styleUrl>#m0-point</styleUrl>
+    <Point><coordinates>174.774828,-41.296375,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Shop Front on Cuba 282</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/8V3z9psfcmi8o-AMdQopyvaqX7eNCRUR74Sh-Dj4AzMkN8HJaUu85mYRAso4dZ9d6uO4v2BcITy56tRRufKWqYjyANNh5ao-UqLuVkOwMN8l" width="240"/><p><b>GUID:</b> a6759aac359648769bd2b2d829787cdd.16</p>]]></description>
+    <styleUrl>#m0-point</styleUrl>
+    <Point><coordinates>174.773399,-41.297331,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Kiwi Art House Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/ZhQLqYtt150_NuxtMTMqACxOPvIvs_cpJQfzkJUk8TCIUfsf2xzXKJPWLJW9B4NtgUJjlydVqgGcd4dNOOuvlEPfbcP9F96pBJ0vW3HNatlM" width="240"/><p><b>GUID:</b> 4cb49bf0c65332619db80df2e7cb5f43.16</p>]]></description>
+    <styleUrl>#m0-point</styleUrl>
+    <Point><coordinates>174.773259,-41.297486,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Pie Heads</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/n7fR2MKkXUtUQcxm0jLXOXtZUUj2LmbNajUWyTr_sbCKdyIP5AVanlDXLuz-aw2sCee38U-RyjQ7wWReRG5nBX96-sobMLFvlrVvbmwdXRI" width="240"/><p><b>GUID:</b> 178eb55420eb4e76bb4f529ffce9868a.16</p>]]></description>
+    <styleUrl>#m0-point</styleUrl>
+    <Point><coordinates>174.774505,-41.298373,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Moving Forward</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/GlnpX6HjTcRHzn5CbLgwWAAGHYPi7UInFOd03eFlghPiiEG4q_ASz42LGbGNxNQfSjhywD3VuXW02pfJrkZ9gdzgWt7MeU0yq676m-O3he8" width="240"/><p><b>GUID:</b> 24bf8eeeecd449a39fa42999ac106502.16</p>]]></description>
+    <styleUrl>#m0-point</styleUrl>
+    <Point><coordinates>174.774816,-41.298435,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Kakapo Kids</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/CS9cve77pcmdrHwzGXZ0WJzrKYgmxDVwBZiV1ZjqC5W20-Gx4MG4sxld_we8m_szEs7u4SK7EQCS2UcjiFiNFUGbZLxxOHKpcm2GogoeXXrP" width="240"/><p><b>GUID:</b> 0f16e960b995432b950ff4a7ba7d58a2.16</p>]]></description>
+    <styleUrl>#m0-point</styleUrl>
+    <Point><coordinates>174.77433,-41.298715,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Webb Street Art — Route</name>
+    <styleUrl>#m0-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.774828,-41.296375,0 174.773399,-41.297331,0 174.773259,-41.297486,0 174.774505,-41.298373,0 174.774816,-41.298435,0 174.77433,-41.298715,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Street Art</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/soaRCaAVX2fHiraT8hrsVMW684QeHjZK_Cj6rQ85CFOwP5MIRzpjIDTB8po_i9fr1jy1bFUl7kvPwOx4xz8CY7nXjYqRk7dMC0hbswtdbTfC" width="240"/><p><b>GUID:</b> 904114082cc8430f8fde3c57e1e51262.16</p>]]></description>
+    <styleUrl>#m1-point</styleUrl>
+    <Point><coordinates>174.774105,-41.299122,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Space Oddity</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/tYQRRbeQkg315EVk6-rbyPXnOeKUKb9zXNrYvsljoWZT_f1CQfbC-AxhUmfarp6wQlmKtgXX13xKdTn1w8xFHm_amq-dL6qaNjbwPIfFE55Q" width="240"/><p><b>GUID:</b> bd27b7e72cad4dc288cb37ce91ffd3ef.16</p>]]></description>
+    <styleUrl>#m1-point</styleUrl>
+    <Point><coordinates>174.773943,-41.299433,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>The Barracks</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/J5ClwrAu3zYTm_C38m6APZjR1-AujVj0dKXJHK-gU3F5hmY4n8WPfu2iHYhSLIQvF1YVPrIgrD7y3ZPX3MD8bg27f3cnRU0XH8fJMqkrUrcK" width="240"/><p><b>GUID:</b> 6ba663ccee9d4085ae9ac1bef869611e.16</p>]]></description>
+    <styleUrl>#m1-point</styleUrl>
+    <Point><coordinates>174.772826,-41.301075,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Here's a Tip</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/Aed2mc5AQ2FBwuh2coCRnjsXCoeiaN1hHgxmG0r3CqOBSWK8DQZldHyaPrXH7wUz34BoNQsww_Q-Q0fprRQY_y2es-qVXf2XEPEe_DMqHBwucQ" width="240"/><p><b>GUID:</b> 526e7a7962a33e62ab57816588220e4f.16</p>]]></description>
+    <styleUrl>#m1-point</styleUrl>
+    <Point><coordinates>174.774177,-41.300695,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Heart Stone</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/Px3A4jAjg0q5a2uI8NwXkqR335eF_0LlueJuhuoHTxOXFgYHZ5voLD72zEBhC5I9BOgW6eU0So5kZtVYiQ-RIIuUrBsXTIDUqP-d2tVz9oo" width="240"/><p><b>GUID:</b> f26d24f0e66f482097fd77054bea0a5b.16</p>]]></description>
+    <styleUrl>#m1-point</styleUrl>
+    <Point><coordinates>174.77542,-41.298851,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Le Calligramme</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/DfDDZtBKYU5Xm44E-2OdpiYSEgeIYrnE_hBr5npdTu5c40AP531ClYBXb1JhJmpKmCMDSzR3A_IUq6Gn5J8N9UvTWkcWgepRHswoBlV3IwrI" width="240"/><p><b>GUID:</b> fce680a2cc6f412fa6f67fa3a0d90738.16</p>]]></description>
+    <styleUrl>#m1-point</styleUrl>
+    <Point><coordinates>174.776552,-41.297896,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Massey Art — Route</name>
+    <styleUrl>#m1-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.774105,-41.299122,0 174.773943,-41.299433,0 174.772826,-41.301075,0 174.774177,-41.300695,0 174.77542,-41.298851,0 174.776552,-41.297896,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Whakaruruhau | Shelter</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/VPfjMJRLKQ5xLJ1manKfrGR0pTo-4KVMEux549xjpDZzMDxjMYW8ICyxlIaM_fT9IOdEJSP3W5rh6DSOBp_44veeggKAeB4-5IsfsmZYOZpL" width="240"/><p><b>GUID:</b> 95c54c5d8ead488a9006b6fd973b72e0.16</p>]]></description>
+    <styleUrl>#m2-point</styleUrl>
+    <Point><coordinates>174.776908,-41.298024,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>The Man With The Donkey</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/utmGenTmzUL6J1aYzhCVsOA-4DXBSfoLqIoHkslFvc3b-bVj81onm7Ys4C1YX46CfWrfzJDcEWRG0yXEaUBoDdyQjfoikJtNpRM_MXPQ-FUpbg" width="240"/><p><b>GUID:</b> 4edce3a2963a4e0f9dba0bc49a374963.16</p>]]></description>
+    <styleUrl>#m2-point</styleUrl>
+    <Point><coordinates>174.777154,-41.298798,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>The Empty Soul</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/6j0PGvM42HhsraFPAJiuofbLiClr2QmOLi7De4z-848HaulYhwSvfafCdwMmKrj06OZ-VpGZJMbqK18EJ3mU1myoNy_XciLLYSmFaOk5qnE" width="240"/><p><b>GUID:</b> 823274f2853140bc91a6a3152a0c284f.16</p>]]></description>
+    <styleUrl>#m2-point</styleUrl>
+    <Point><coordinates>174.777665,-41.298688,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Tunnel Of Leaves</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/G8xyOE9A4DlaYPw3FEGucf88MmJovH2BpffJv4k8CWcRAGbifbxETYjF74HIAl7X-UpvQF2oA_mh1NYAQcSc_z9lIOkYknpLXmug1NhPe4Kd" width="240"/><p><b>GUID:</b> e5e818c5b4f94a8fa1bc485ec36c842e.16</p>]]></description>
+    <styleUrl>#m2-point</styleUrl>
+    <Point><coordinates>174.778796,-41.298556,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Te Reo Hotunui o Te Moana-nui-a-Kiwa</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/t31IsnT9RT3KOc68KDvKuVhbl1V7bSD-PEBaY3OJ7beeV_IB06NMAEU81n2lTdYlpuSYaJMJiQixMHyRF3yPYq1mUiamrC7PDPgMUN4QUH76" width="240"/><p><b>GUID:</b> e3f9d795bbe7409b8e86e8427c742de8.16</p>]]></description>
+    <styleUrl>#m2-point</styleUrl>
+    <Point><coordinates>174.779351,-41.298714,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Urban Escape</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/lnxldkYERspZuOVQYuMGGQ8KMkwU4Z2RxXdz_RUopGEKvFmHvYtIEqWgwHDRPHRXXg4iymTmFXn3H-nFowd95avleECAI5b3-BxOBmQuJIW4" width="240"/><p><b>GUID:</b> d343f69ddad0409a95076818be69d93f.16</p>]]></description>
+    <styleUrl>#m2-point</styleUrl>
+    <Point><coordinates>174.778436,-41.298064,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, War Memorial Art — Route</name>
+    <styleUrl>#m2-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.776908,-41.298024,0 174.777154,-41.298798,0 174.777665,-41.298688,0 174.778796,-41.298556,0 174.779351,-41.298714,0 174.778436,-41.298064,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Mechanical Gorilla Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/XKaS7aSfDU99GgKsxYQvXfdZTf8jD97pZJ8yMIlFJjqz0EerqERGlwLA2FTIf1Sn4Uw3FBKOffk8kHB2g_g_vzhMKDUwPmlgIj9ysR1EohE" width="240"/><p><b>GUID:</b> a476db5bf3884bdd95201749479d0235.16</p>]]></description>
+    <styleUrl>#m3-point</styleUrl>
+    <Point><coordinates>174.779082,-41.297244,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Brewtopia</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/6VcusedcElLYEWqBJec-_rM1Dgxvz-G2PdIbZlScpBEUSz6VRI7r8PrQi_svfeiiGRp-88G-a3EDXfdqWN9A-13OE3qR4Ity4vMc3NowKRke" width="240"/><p><b>GUID:</b> 4fac4a2ed9914acc98c040bfba7fbf18.16</p>]]></description>
+    <styleUrl>#m3-point</styleUrl>
+    <Point><coordinates>174.779071,-41.296694,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bogart Dog</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/EY3b0Zc4N3id0o7oDmhvYgtyYf3YC5NxYYXNlk_32Mv9p4Dj8_sprRdNaInWvlMKEYXMEE_1dsAoFm1VeYRNyocFr7ynp4LZleXYQGXie7Lyww" width="240"/><p><b>GUID:</b> 13f41ba0e8ca4a38885d7f64f6f9e13f.16</p>]]></description>
+    <styleUrl>#m3-point</styleUrl>
+    <Point><coordinates>174.778239,-41.296562,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Two Birds</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/GlzeexCkWS26Gd0PUoMTe27LREDJecdci-UbL4CDpqC9x2pZfeIknLWvfx61Urdu0NI9OqT0cWiP5tglHpE_VCS7IIjkFGnV9azE9HXB98Ge" width="240"/><p><b>GUID:</b> 9251f59d5b6d4c558268ba9877317bc6.16</p>]]></description>
+    <styleUrl>#m3-point</styleUrl>
+    <Point><coordinates>174.777922,-41.296105,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Dragon Wall</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/UMgRIhAFnkCg0SkcddmxAyzrk9hVQox-NSyDtskqle_2bv7Mwl99wfiKB6DP_-5W5vjXIei1Bhb74IajCHce55RCBDZ4ns47FJdGIvseSycz" width="240"/><p><b>GUID:</b> 7d432013371f4b59b04e012e4f50cc10.16</p>]]></description>
+    <styleUrl>#m3-point</styleUrl>
+    <Point><coordinates>174.777487,-41.296143,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Cat on A Hot Tin Roof</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/bphPBrVlhVWhOltKyFC2Pv9uhipiyPVDnEHahMocbzPzGudtQ1s9jJVS6Zc10_toErDQWCJMZHId5oojhyDs2ZOLJ7u9zSJ-Jk9BpNJXIc_d" width="240"/><p><b>GUID:</b> e768a6b181b64499a8a811fb52478801.16</p>]]></description>
+    <styleUrl>#m3-point</styleUrl>
+    <Point><coordinates>174.777311,-41.295408,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Frederick Street Art — Route</name>
+    <styleUrl>#m3-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.779082,-41.297244,0 174.779071,-41.296694,0 174.778239,-41.296562,0 174.777922,-41.296105,0 174.777487,-41.296143,0 174.777311,-41.295408,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Creepy Cat Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/hlT1xNp2uUusdVZRPjOFQYsD34jlbeGHVFhM0vpVNDIYbzHtGC-w1ruv1kA31OI02PE-Ps4GhvXl79j3nNW2N35rt4Pny2dJ3DA5Sw8q3rE2yA" width="240"/><p><b>GUID:</b> b1447110a5644db582686ce60f4a46bd.16</p>]]></description>
+    <styleUrl>#m4-point</styleUrl>
+    <Point><coordinates>174.777579,-41.295579,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Green Alien</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/EVID8lZZmxsX4qn_OokWmsnIF76s93NOJ0z8KI3iHFsPqgNuNQBmYU2QGSBYVF8E3cW3737E5f-sXg-dlnt9ZW2En7O6dbwtLqn0IM6O_Q2xfg" width="240"/><p><b>GUID:</b> 260ff3ceda7646cc8014ec169a28c145.16</p>]]></description>
+    <styleUrl>#m4-point</styleUrl>
+    <Point><coordinates>174.777705,-41.295323,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Graffiti</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/o6ncTls642mm2Id1DIYIGbdxnAhDnmPH7T6Uq-mtQjSIYoG9ykCgeQjhx-sH85l3uCbbbJrkyStv20w6JmTSek6XnyoFA8SdVypbHadUvU_A3w" width="240"/><p><b>GUID:</b> 7280c37cf9d44f099deee67f8dea6ef9.16</p>]]></description>
+    <styleUrl>#m4-point</styleUrl>
+    <Point><coordinates>174.779064,-41.296049,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Streets of Venice</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/haOfTfoeDv-3XuGnFijX2uO2ZuVGs9g5ZwoBF1RD7S0LRks40s84JmsHW8Jd9g_R-v2Gz2N-FfGpZ4TvkeHkrDzpGfFPnizMcfv6IclC1ebGOQ" width="240"/><p><b>GUID:</b> 7858d02195ea4f3cbc81eb28435d418a.16</p>]]></description>
+    <styleUrl>#m4-point</styleUrl>
+    <Point><coordinates>174.779553,-41.296051,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mystic Kitchen Floral Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/HKVOxPq8xO2Ppe1TcS3ckgj8l1us8-1nRevUQ6CWnlJNlk5VhF2N4czWlP_mY8kNDFVi_pD_k62a8RtrsUib_vOWJ_RmxoQwQv_r87I1XYxxDg" width="240"/><p><b>GUID:</b> 510b077ce1a73f73b9fb0f5ca3a26811.16</p>]]></description>
+    <styleUrl>#m4-point</styleUrl>
+    <Point><coordinates>174.779861,-41.295612,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Zebra Building</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/KhuCTa-OWAH3YPLF2mTpvfT44yNTT0x6HlvNZiFOSB0yfQwoZGRxfCnUnvy1rOQtqLF63WkrRBBU_GfCfcwnY39deT9pOOF5f1qC7tq8wWOb" width="240"/><p><b>GUID:</b> 41580e85eb444e8aba0caabc54a81146.16</p>]]></description>
+    <styleUrl>#m4-point</styleUrl>
+    <Point><coordinates>174.78059,-41.294304,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Tory Street Art — Route</name>
+    <styleUrl>#m4-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.777579,-41.295579,0 174.777705,-41.295323,0 174.779064,-41.296049,0 174.779553,-41.296051,0 174.779861,-41.295612,0 174.78059,-41.294304,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Cremer wall art</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/nuEkyFWqXAZ5RZHytMSdOLlpxuZwkxm3XH_u2EP8MqR1LVjDP3MbdOk9FcIsYUF6OG-AtHhnV5GOTHN1pB4EVQDQjNjJtu9JruHvwCDDGOsU" width="240"/><p><b>GUID:</b> 62c84d5f1e0737ada3815148504628e2.16</p>]]></description>
+    <styleUrl>#m5-point</styleUrl>
+    <Point><coordinates>174.779814,-41.294108,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>The Cube</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/YYsQQ7zlwm5ulElXfbTASy5fdTLsCLrs5i4YGyhU93aBO9FPfoZ39oOz-YUM0kY8jWqSuTTZuWlGlIVWiNkGFNw2Nk0ww-ELftiOFOiPijG9JQ" width="240"/><p><b>GUID:</b> 8c82cf9e640245e8849b8e84c9c3b390.16</p>]]></description>
+    <styleUrl>#m5-point</styleUrl>
+    <Point><coordinates>174.779388,-41.293986,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Big Z</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/sA4c0ovsmLh2BUsHE71Ka-ZxJkt3DGC-0rvPT9AfxncOjFgpdpzsrbJqO5TeSo54YTxpRPAKeRdZRPuoXCLdp6LnG038zZYKrYcqZmtjvQpu" width="240"/><p><b>GUID:</b> 8ac9eda382d54e9382f3ceceb354fb57.16</p>]]></description>
+    <styleUrl>#m5-point</styleUrl>
+    <Point><coordinates>174.779477,-41.293932,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Hire Quip Dulux bmd Dog</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/h5bt5HtnN2Cc_g3tfWSLt8pOvv69OXoaDbTIvFUnjjkgcHlSGAPf3tc08LdBoZyml1l2S9k_aDjGe-m8L7emfgY5b2b0yD1Nc1pNods0GTMq" width="240"/><p><b>GUID:</b> 93b3a72434ad440592e2d4a84557b03c.16</p>]]></description>
+    <styleUrl>#m5-point</styleUrl>
+    <Point><coordinates>174.779549,-41.293609,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Octopus Invasion</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/lICMOAJH30Yd_95xXTWNmVUT_seL3Rraf4bED8IADJS4wiordYUi0_nJW21xxcAw7soyKwWDKpUf-CxlCHI2jOWgsc0VCa1BdALTivtMilk" width="240"/><p><b>GUID:</b> ac3e2636773f31ca981b82aa21a66bad.16</p>]]></description>
+    <styleUrl>#m5-point</styleUrl>
+    <Point><coordinates>174.780073,-41.293434,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Monster Motel Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/kAB4F9dq2SNxsn17LPjjHpreN557mELVfwMtkxvWJ6MWObADXTmFebOTcPkbjJTqNnxOQeDHULsOE3s1BAUtIL1PHi82KT24llMw3SDEHw" width="240"/><p><b>GUID:</b> 7c9975550a0d453a92b9deeb796a7522.16</p>]]></description>
+    <styleUrl>#m5-point</styleUrl>
+    <Point><coordinates>174.781332,-41.293985,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Holland Street Art — Route</name>
+    <styleUrl>#m5-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.779814,-41.294108,0 174.779388,-41.293986,0 174.779477,-41.293932,0 174.779549,-41.293609,0 174.780073,-41.293434,0 174.781332,-41.293985,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Running Man</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/C4z42ZkpWieMLphxRFi2DAzksXcaanVAQjI5elwKabIqMWql1NIXDzS1J1vp_Ss3Herc-Ut7bIT8Wmb-W3nZIm-9j_SrleScjHM-B_pIbkU" width="240"/><p><b>GUID:</b> 4bb828db8a5244728215308ed7412ab3.16</p>]]></description>
+    <styleUrl>#m6-point</styleUrl>
+    <Point><coordinates>174.782205,-41.294823,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Limited Limbs Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/0apIDnZmxdFEsT70H0Jt4x10_TJ__whSDS26KAIcsvHZ1QWz_yY3SAcd2A-bzBmkw5NQ3iLS-KL0LuSz6cdXUy3VSPiESDWxp5-CckCJRmsgfQ" width="240"/><p><b>GUID:</b> 58f502c46a414a21875b5d501d99f9ae.16</p>]]></description>
+    <styleUrl>#m6-point</styleUrl>
+    <Point><coordinates>174.782186,-41.295124,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Upside Down Batman</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/v7oiI7ll5SSwXK2Mv7VP_VI4deHPxWvqZoWGqHYuDvpdm880qWC8X2v77UK5MeLUkHtqc506RzRWVVDY1_vtQJxPZkgjcns9zAVawRDr0ig" width="240"/><p><b>GUID:</b> cf2b0ede6924430fb9477fe5b96e2337.16</p>]]></description>
+    <styleUrl>#m6-point</styleUrl>
+    <Point><coordinates>174.782434,-41.295286,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Queen Victoria Statue</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/iMLnhlEZMX8of60Pg2zvGxxcwLf0wKAupgTK94wp7QItlxguXo5FscXz1VZxXXK9HuaeJ4C650-4qEP7c-M9nGmth7L99TTATIUhLSYRH2LMUQ" width="240"/><p><b>GUID:</b> 8147517601cf4613bca998b38137c2ad.11</p>]]></description>
+    <styleUrl>#m6-point</styleUrl>
+    <Point><coordinates>174.783174,-41.295242,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mythical Creature Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/OxwHTekfex9D0LFkeU4t2tI0YriwW5gY-ZsIZmFQihIzlIsK_BNW0RJzCkbbT1USc0LBXY2QuCLvS8IINgnSa4mr92_AHqHFFfD6INBzC0kv" width="240"/><p><b>GUID:</b> e8406c12257931859822e5adf44ef9f2.16</p>]]></description>
+    <styleUrl>#m6-point</styleUrl>
+    <Point><coordinates>174.78171,-41.296405,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Thai Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/FuTQRERzwhhBesP7ml21Idk4lnLaZ6OnbAxQhgj1lxyZ8nDQcebWk82TyH9_xbYgssiHt81lvIivo5OWEKPYXKN-gUJHCLvnsTY6LmWCXs8" width="240"/><p><b>GUID:</b> ddb377e751b6451b8e02b867e299c6d8.16</p>]]></description>
+    <styleUrl>#m6-point</styleUrl>
+    <Point><coordinates>174.78178,-41.297148,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Tennyson Street Art — Route</name>
+    <styleUrl>#m6-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.782205,-41.294823,0 174.782186,-41.295124,0 174.782434,-41.295286,0 174.783174,-41.295242,0 174.78171,-41.296405,0 174.78178,-41.297148,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Battles for Greece Memorial</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/foNHF_3H80yyUbpjnzpylpAG3VfOvJnsiH255pBM6y6-CVUaTSG1n6HKri6qSFkov0d9IFkmgT6onaO7C8F5KpykL44HkCHNRMFxzMM0UEh9" width="240"/><p><b>GUID:</b> bdb2e3042e7d44cf9cf072191cfa1d9f.16</p>]]></description>
+    <styleUrl>#m7-point</styleUrl>
+    <Point><coordinates>174.781938,-41.297415,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Ngā Whenu o te Whāriki</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/Uj5OmKfAAMJ55ZvI-n6eNARdKtzyvMK-IevtoliK27EqicTYozmUuGo2E4blTOXYTEx59t3W7bRahO9zSImgs9ChjXISStOCucrYVKt4Vcax" width="240"/><p><b>GUID:</b> 53a2bc04839e366db4652dd423a386a7.16</p>]]></description>
+    <styleUrl>#m7-point</styleUrl>
+    <Point><coordinates>174.781707,-41.297786,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Hooter</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/htARvM2ItNQWkdNeZ21husZYA8A0XtI311F0eDss8pEc_sWYBlmKG1PgkHODzq3SFDCQKCP92M9E96Y-n_Avk7PSN9JDKzybkN8MPn-0MJ68" width="240"/><p><b>GUID:</b> a4ec0d68488f472f955e5f38305c496b.16</p>]]></description>
+    <styleUrl>#m7-point</styleUrl>
+    <Point><coordinates>174.782161,-41.299234,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bearlicious</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/FVQQ_WXHVM1Lc7W22ZmltZ_Yao6H7MvDHi8QxXfwUdpPWokIjnXoSZmqQSp1oWNtiXlne3wWOaBCVbMnk-JxRcZQiDVRdCsYZWOuiynSmv9z" width="240"/><p><b>GUID:</b> fe4e6dbada69445eac8b044beb11af15.16</p>]]></description>
+    <styleUrl>#m7-point</styleUrl>
+    <Point><coordinates>174.782371,-41.298922,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bunny Murals</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/Tzq24A5e6T_1cxa0jcNWP5xt53grTB7lrNR23AAj16X2ELPGSHklCi5rHb9lG96i4xu9Acq_2parbzB09o2HITXRn6w6XTIuIg0n2boTqpM1" width="240"/><p><b>GUID:</b> 5738c08432174a56b1095b5f3941cee8.16</p>]]></description>
+    <styleUrl>#m7-point</styleUrl>
+    <Point><coordinates>174.782658,-41.298502,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Home St Wall</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/KpQtJ2GZfDxBSE6Dp3gJQCwhA9aYBa6sK5ZIfohW8syljZer9ByavcbLOAf-zyaSXKqe1vkaky61iY1IBqH3KBBo7ndAzNDFDmCDrE3LtDKd" width="240"/><p><b>GUID:</b> 834bfa1241f640d7abbc7efa4814ab1f.16</p>]]></description>
+    <styleUrl>#m7-point</styleUrl>
+    <Point><coordinates>174.783088,-41.297312,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Hania Street Art — Route</name>
+    <styleUrl>#m7-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.781938,-41.297415,0 174.781707,-41.297786,0 174.782161,-41.299234,0 174.782371,-41.298922,0 174.782658,-41.298502,0 174.783088,-41.297312,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Mt Vic Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/O6d81HafsBlWofx-b9O9Zzi0S39QTjpGV6Bp6nuZWkxNxGkOudJLcyT6FpcPIZ5POrxxah-Lef9nPgEyi71GvxaqfQycFE98WWpmj55kCUH8cQ" width="240"/><p><b>GUID:</b> cc6c885e7b604c74bde7ba4356650027.16</p>]]></description>
+    <styleUrl>#m8-point</styleUrl>
+    <Point><coordinates>174.783421,-41.297044,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>So Delicious Graffiti Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/KUVzMtdKtYSKg5gdrTSIO40D7V4HcbJrQi5EquY1-LubEBA8Vg3TYVG3fL-3_IwG-tA7YKMUbomYZngvGBH9kNzoObjn3bt9c12Jbjgiv_vb" width="240"/><p><b>GUID:</b> b02022eb16f93eb3966a64cd11ef1e3a.16</p>]]></description>
+    <styleUrl>#m8-point</styleUrl>
+    <Point><coordinates>174.783887,-41.294596,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Waitangi Lagoon Pouwhenua</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/QIwb-x2r8UNE1x1Kuu8-pKSWOd2rk8SvQHASc0PWIdZ4FTi635uYUZVxtXjfn3vvbX2Eir7HjxYFA9Na3Fs2WPRKR0BLR84QR6U8NNAM583g" width="240"/><p><b>GUID:</b> 4875b556d4a747ae9356784f9ac6d3ee.16</p>]]></description>
+    <styleUrl>#m8-point</styleUrl>
+    <Point><coordinates>174.783797,-41.294117,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Tuatara &amp; Pukeko YHA Wall Art</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/BxaDjdtyOjNmanl3wBigvwUUTI_iLSesAFUrO2PuMk76NUmZPavWiPlCh-Ii8EdI-UxG0Cuj-hkCuGlTpEa_a7uTfb0NPdstd8hj6Pvs_0gONQ" width="240"/><p><b>GUID:</b> 378254537b7e3f60b66f2ff2bfb8e3c7.16</p>]]></description>
+    <styleUrl>#m8-point</styleUrl>
+    <Point><coordinates>174.78403,-41.293048,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Windy Wellington Glass Art Scenes</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/66EEutNaCOLR5Z2uq23hLy6G72nS4aXYwesRwZnKt90UVcqfRWLHYS1ZmRtc-1aoFETs0YrLRFSQDCRImq6K6yhi-0_1JtQoTYiUJxzah2w" width="240"/><p><b>GUID:</b> 32319df7433a31e6947e5cb3bd9eefc0.16</p>]]></description>
+    <styleUrl>#m8-point</styleUrl>
+    <Point><coordinates>174.784175,-41.29256,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>DSIDE 2018</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/t0qzvWvglT6BZavsMvKP9DrwzFub06SEgOmm1lxeiK35COfGhygdDIV-89QxIJdBKd40lewAgzlAYeRzuUzFFy8GX6aUq82TfwGmVwl2xQ4" width="240"/><p><b>GUID:</b> 4a16b7800bda42268457ee9f419b43cd.16</p>]]></description>
+    <styleUrl>#m8-point</styleUrl>
+    <Point><coordinates>174.783516,-41.292156,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Kent Terrace Art — Route</name>
+    <styleUrl>#m8-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.783421,-41.297044,0 174.783887,-41.294596,0 174.783797,-41.294117,0 174.78403,-41.293048,0 174.784175,-41.29256,0 174.783516,-41.292156,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Ban Shark Finning</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/KnN8WpjJFhDR9TJ50ONyghSwG8qV3d5rLmmkhehOToQQfeTbgeWeq8hOThGXnjnoWT-jDCfC9BZPSoxdUAKv1zus63Mk1Tcf64RhRprWI873" width="240"/><p><b>GUID:</b> 59b413eb3daf492a9b99e07075301ab0.16</p>]]></description>
+    <styleUrl>#m9-point</styleUrl>
+    <Point><coordinates>174.783307,-41.291852,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Waitangi Park Graffiti Wall</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/xZqeM-_XaR2JbM-Se9RkHkJ47DXy9lOuOOkAh6UbiY1TsROlPZXWmvSDa_MwDK9CpnsAPE8iVb2B_PQ9JNK4IUF2piUzrZAgGVIgdK7EtKBZ" width="240"/><p><b>GUID:</b> f62fd7005f554065b503218c46fb54f0.16</p>]]></description>
+    <styleUrl>#m9-point</styleUrl>
+    <Point><coordinates>174.784385,-41.291909,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>A Barbarous Tongue</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/wrBPkH0c_YO8IrJfcLmFW7jj7NxWEU4y-tnXqOZurOhuoV83En_ZzYwqC8fdpYPXuwVBYTwXVcjFKCTP00mlATvDDUnvsMF_x8oLWAqivz7-cg" width="240"/><p><b>GUID:</b> d8194282d544372287a77550601ee41c.16</p>]]></description>
+    <styleUrl>#m9-point</styleUrl>
+    <Point><coordinates>174.784447,-41.290493,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>James McNeish</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/l-LKI4t9KOh-kpNLBiezpdk8YbHTvi6-rjwh_XZY7TJ_CbpKQfJgyPn6mVr73Xoct_xIdeR6G4HZkYcTKyI953Dzgmnsjn9xkE3BJxdJsY7k" width="240"/><p><b>GUID:</b> 0a061dc06b7e400a9d16a63edce20569.16</p>]]></description>
+    <styleUrl>#m9-point</styleUrl>
+    <Point><coordinates>174.783856,-41.290541,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>The F69 Propeller</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/aHXi02cbxOuenRjhZJPOvmWVNQXbEA3reHd6xWE2-s8XNtWRyobTi47zhuvu_PtPiZvEadqDafohsICAMBLhetbdvPHWY6EtcLhEqz8VLL0" width="240"/><p><b>GUID:</b> 3ab0339b5da94b5b866304bbc481bbce.16</p>]]></description>
+    <styleUrl>#m9-point</styleUrl>
+    <Point><coordinates>174.783683,-41.290811,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Light Dances</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/bc6R19AY9grQRHlK2RMpJGvGqktIw34JMCbltMkw6bbhQZplzjOEOgDq4SUIotUIZeij4fG8eea7-RI7rXf0_L7N8SUwDarSo3tDuS1v7YU" width="240"/><p><b>GUID:</b> 2dce9b106965475899d2dc55e0038806.16</p>]]></description>
+    <styleUrl>#m9-point</styleUrl>
+    <Point><coordinates>174.783392,-41.289548,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Waitangi Park Art — Route</name>
+    <styleUrl>#m9-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.783307,-41.291852,0 174.784385,-41.291909,0 174.784447,-41.290493,0 174.783856,-41.290541,0 174.783683,-41.290811,0 174.783392,-41.289548,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Their Heads Bent</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/wn2k5UmuOLPdAS-5dHRcmiimLDJiSpmRXfDR66iBCIBbtV0cYMYqdKH22HJOj9q9liFpJu44yO161h-Uv0c9VPKa1M7jIxGSalOfoOtHQSfKtQ" width="240"/><p><b>GUID:</b> 7e19983b737447b9bac3b1d68ecfa374.16</p>]]></description>
+    <styleUrl>#m10-point</styleUrl>
+    <Point><coordinates>174.783075,-41.289379,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Solace in the Wind</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/NpvBRF_lEbJoKgEfcIt1KyXg6wI_eBP26ZVgcBnU2Nncu3h6BA0X9U76akJlgfGVk7D1wv8JEYaLr6bbUWf5eXCw3rvfAjhbI7EzPcbYXYU" width="240"/><p><b>GUID:</b> e293df1857de4ca1b8716cbdc27c06b8.12</p>]]></description>
+    <styleUrl>#m10-point</styleUrl>
+    <Point><coordinates>174.782815,-41.289393,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>I Saw The Maori Jesus</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/GKHjdgRi4UL33rKpXY2s6TZmjxXc7vfnuSEk2PaXBStaNCRtRmjV7akO40YAsN3AezKyx0aJ6OG1VGoqReaMr0HubnpDMB5DLTGb4S7PAe0" width="240"/><p><b>GUID:</b> c74f7900bce24fa5965017f2bef40d7c.16</p>]]></description>
+    <styleUrl>#m10-point</styleUrl>
+    <Point><coordinates>174.782325,-41.289562,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Yet I Think, Having Used My Words</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/3QTKruO9CupLX1xVVogl1ip6bvWR-NeRGbaxIjaM8ZNp3tb9TeqbXGkRyE1tVzZftjiejrkwEBG9nAw4MOpG1qGZPXA4XBVFg-e4IpMHzoR_" width="240"/><p><b>GUID:</b> 8d6211f5363544caa87781545a1735e8.16</p>]]></description>
+    <styleUrl>#m10-point</styleUrl>
+    <Point><coordinates>174.781413,-41.289688,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Blue Rain</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/9-svCKyb6iXrUyBYuA73iZ_lvxm1UeJ2HNGudK0Y-kEEowsCcRT5yk915jVXbG7SnbmkgPIA4sDaoOhZV7tqU556QsTBR9D42fOE2jL4q0gx" width="240"/><p><b>GUID:</b> 5a31ee39db764b60977132e6958a4906.16</p>]]></description>
+    <styleUrl>#m10-point</styleUrl>
+    <Point><coordinates>174.780804,-41.289929,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>I Live at the Edge of the Universe</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/iuPWv9z2VIe1xcw0loJb-e5nDtBlJqjz_OjkgM-oJmxGlIo_jcKYI_zpN9HIb7zOdipKgSuRKIugFFnDsuCmRS8WLBWH5FL8QtFuDOt8DYM" width="240"/><p><b>GUID:</b> c00da38037e3492cb989f432b3f41725.16</p>]]></description>
+    <styleUrl>#m10-point</styleUrl>
+    <Point><coordinates>174.780585,-41.289662,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Te Papa Waterfront Art — Route</name>
+    <styleUrl>#m10-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.783075,-41.289379,0 174.782815,-41.289393,0 174.782325,-41.289562,0 174.781413,-41.289688,0 174.780804,-41.289929,0 174.780585,-41.289662,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Urban Forest</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/Ng0BxuktUkHOgz66eCYAVjgz9l087c-7LFZ_MbryQfcoL-DUZnUsVhJ-hMOurPcb0kQEpelaKQJZT-b4QMvj816N5FFHD5pK1BCw25cPWA" width="240"/><p><b>GUID:</b> 8ee1458ccd4e41da8c412eca35383396.11</p>]]></description>
+    <styleUrl>#m11-point</styleUrl>
+    <Point><coordinates>174.779809,-41.289523,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Kupe Statue</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/9FcSKIXpjJ5zU4S8z-yP6DDEuiTKcmAzrTE5hfrBgjJB18oG3TDLFxe1dpndSuFfhloJiG6Qq4gtlJuCYXuoQg0b5pY_p2uEpwwDYVNo_eGtag" width="240"/><p><b>GUID:</b> e9039753468b4c529d9fb14e81c50771.12</p>]]></description>
+    <styleUrl>#m11-point</styleUrl>
+    <Point><coordinates>174.780053,-41.288844,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>I Love This City</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/Jh5E53p4HF1usq48LTnoOcxIX2606Tr2YWEx5xnDYkzNnCDpnx_dKKCo58Ww0-WvSKo82MFWG8WHSNioYtElZAaF31VMQcGLv4jwKhxmrucr" width="240"/><p><b>GUID:</b> 0cf1d8afb440498399920d81774a48ad.16</p>]]></description>
+    <styleUrl>#m11-point</styleUrl>
+    <Point><coordinates>174.779892,-41.288453,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Anchors Away</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/ZyyDyK5LsC7N7oI3onpk7y4kxVy0HjfNe0cwUnmLb88vLW2AnJp5OMh2CgS_yiDfOZiIidkMDlrA1FGZN759J4rKFh0-BTp-zevzqzDwdQM" width="240"/><p><b>GUID:</b> 352ab8322fee497e9f969735c4f402a5.16</p>]]></description>
+    <styleUrl>#m11-point</styleUrl>
+    <Point><coordinates>174.779652,-41.288228,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Fruits of the Garden</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/SutNpnc_Rr2PpofW0NQ1IKhjVs4zsQFH2pECqfHmr2X15kf8LUYvNFfAwWbKidN1QYBLtelD71k1Yqbu-fiPZ4DnX4M0k56DLBPZnbkoJfnT" width="240"/><p><b>GUID:</b> 1614a2bc8d9d46b19bf29e490f88ec7b.12</p>]]></description>
+    <styleUrl>#m11-point</styleUrl>
+    <Point><coordinates>174.779209,-41.287645,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>The Harbour Is An Ironing Board</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/Hu84s1VhKVzfZzXProay7jyIweo90adErLMUSOXixb9YxbOIIIAMNb0y7O9N74cBxMp81jpGkX07ePKwdS5mFtwwG9Y9XFUSHbBorQ-ARVl7" width="240"/><p><b>GUID:</b> a229d7ac621b4b23a015f220c4a4c333.16</p>]]></description>
+    <styleUrl>#m11-point</styleUrl>
+    <Point><coordinates>174.779482,-41.287355,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Frank Kitts Park Art — Route</name>
+    <styleUrl>#m11-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.779809,-41.289523,0 174.780053,-41.288844,0 174.779892,-41.288453,0 174.779652,-41.288228,0 174.779209,-41.287645,0 174.779482,-41.287355,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Wahine Mast</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/COy-DldpaCXuTyl7uIVliVOWD0FNtmKLGchqGOddUqiOnhxxV922qfs4gfqu0kDF0uRxupayT-KOJWkoGdi3JaoDgYsZQpk8PToczcuLFoctmA" width="240"/><p><b>GUID:</b> 6d06bbc418774da38f991538599cf38a.11</p>]]></description>
+    <styleUrl>#m12-point</styleUrl>
+    <Point><coordinates>174.77921,-41.287266,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Water Whirler by Len Lye</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/D8Go62AfKb2eCpgSgD1vOQUhJ4wIqxnvTL0fMus8Uox4gXTdTwqiK9UhXH-U14Is0pSCb7qZg5hC4MXkOp3pHkj1hisvSQ-Gfn82c-3y6PQ2Kg" width="240"/><p><b>GUID:</b> b2d7c272609b481292ad1b9645e987db.16</p>]]></description>
+    <styleUrl>#m12-point</styleUrl>
+    <Point><coordinates>174.779302,-41.286423,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Wellington Cultural Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/FBT4z_-GadR76Itx4jQbl13z077ZgD3MV13cx6j6Gi-hXXk-51CrfKQA2ReeWOa59NP1MPsgcVMZwX81DSMFiXyMgx03UbBE-5P2PTH5Mkmg" width="240"/><p><b>GUID:</b> 8c8f5c53fadd4e92b9efbbebba5f05d8.16</p>]]></description>
+    <styleUrl>#m12-point</styleUrl>
+    <Point><coordinates>174.77971,-41.284365,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Aunty June Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/TYJWrSZSYsB_t8_9hvnHKlikXJCZoCGXmwGZ4pZ7eMz5YxzxvOi8SJh5z1g3nSyLCs_KjUQ5XMo0sAxAhEY7jAh4jZDX-317vNUdS6vLOcw" width="240"/><p><b>GUID:</b> 2b98883596363e9491a11716042ee839.16</p>]]></description>
+    <styleUrl>#m12-point</styleUrl>
+    <Point><coordinates>174.779827,-41.28385,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Paddy the Wanderer</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/ZpAP-iTBUmVZaZbZ4ignVBU29XYqnp9EIsU2HjWwNL-s5Vu4BGLSjP_vJWUUIEj8sJpIt0vfUOsf9ewU2pbwiTvIt56nbRnvDQ2mjgRwULE" width="240"/><p><b>GUID:</b> 534a21a3dd2c41889f727f60c10a751c.16</p>]]></description>
+    <styleUrl>#m12-point</styleUrl>
+    <Point><coordinates>174.778084,-41.284828,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>We Are Water</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/PFySkmBlgTGRLYXbClg0IG4StCkJJ3HmKorzIM2UJUAAOdjVvmtg1WWrv_ZS2K_plPDUdrlZB6gVJXCKiYFR1YzcR3rRaMnKOCnBsyOpgeQP3g" width="240"/><p><b>GUID:</b> a684e077e0a649f286a611e13f7720de.16</p>]]></description>
+    <styleUrl>#m12-point</styleUrl>
+    <Point><coordinates>174.778315,-41.285233,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Queens Wharf Art — Route</name>
+    <styleUrl>#m12-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.77921,-41.287266,0 174.779302,-41.286423,0 174.77971,-41.284365,0 174.779827,-41.28385,0 174.778084,-41.284828,0 174.778315,-41.285233,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Sky Blues by Bill Culbert</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/TYXLbjD_JMWJC69OlPBkMb1Wq2BSQ6sGsrKviLWFqiIuDHpJl7RXtIX4yw9uBoO6cQzP_9Yi9XJ5JtJhj0bIDSB1DQb1vbeavPNOMoMOPiHx" width="240"/><p><b>GUID:</b> 4cec02d74c6b457abc49b0252c88c13c.11</p>]]></description>
+    <styleUrl>#m13-point</styleUrl>
+    <Point><coordinates>174.777245,-41.284932,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Invisible City</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/UXTe7Wkb9khOViOYxvfX3mB8trsLYR0eslNbzMMxNyGyFdVYuaIELAWdqwddZ9aCqFRhOi_0pzbVkzELRKWiuiaBkWWu8GLkjjcBCjyObv96" width="240"/><p><b>GUID:</b> 3e8d225d44744837b741b2c829740859.12</p>]]></description>
+    <styleUrl>#m13-point</styleUrl>
+    <Point><coordinates>174.775518,-41.284474,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Electric Streetlight</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/1wRJfqIBrh7JAkDOQaTRKXPR-QHBjaWwnjlETdQU4DKOcAFx2f64D1pY5r4m2H2JWLCVsxZggUxXOC8PfzgFDizjShKwsB6Wx5L5bL_LWIbc" width="240"/><p><b>GUID:</b> 0aaf37fb542447449e9cff7be4a0cb3c.16</p>]]></description>
+    <styleUrl>#m13-point</styleUrl>
+    <Point><coordinates>174.775841,-41.28527,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Protoplasm</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/p7qcb2hHnaFZpFWkZ9DgnvcTjPGOswxJ5A4FGuUrCkRZjhEGqsEWiQoL_lMqk7LwbJwzGicyNw2i2pIM4cBjgggFjIAzXJOTfI3Y0bx36B1v" width="240"/><p><b>GUID:</b> fa7b2c65fe0c494dacd89a27d10a0233.16</p>]]></description>
+    <styleUrl>#m13-point</styleUrl>
+    <Point><coordinates>174.775823,-41.285461,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>John Plimmer and His Dog Fritz</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/d7L2JbXXGPuIKNE9p0retRY8EmF9L9YCFB3BzumxYMNbjDRONzGaCBvW2FnhD8KhIjvaCFS67B1lFmaM4Yug0w0DLXNVofWHn956xWd2axf54Q" width="240"/><p><b>GUID:</b> ca26b369a742400abe6a400f68278871.11</p>]]></description>
+    <styleUrl>#m13-point</styleUrl>
+    <Point><coordinates>174.775772,-41.285728,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Arrival of the Waka</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/zGOQo5aBJWrTUwZW6wkn8xXf5uO0jwh8y3m6QvePXxE812Uhyote6xyc4pyxqRqFR0chquIqiEGoAoz3RQscgh69COU0_xfyyPiuAoZmhbU" width="240"/><p><b>GUID:</b> 7627cdcb63b136d4a9865173576a4498.16</p>]]></description>
+    <styleUrl>#m13-point</styleUrl>
+    <Point><coordinates>174.775978,-41.2866,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Lambton Quay Art — Route</name>
+    <styleUrl>#m13-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.777245,-41.284932,0 174.775518,-41.284474,0 174.775841,-41.28527,0 174.775823,-41.285461,0 174.775772,-41.285728,0 174.775978,-41.2866,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Gateway Sculpture</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/bRzSHSIYWOoDIqA2YPUr5Hu7vRMqhBE4-OHshaFrGMKOUIsXAGX7_KTsAmY379_w216EGm2besOEuOci5sfaoBS5nA-n_6m0_FVxfpOhgsQ" width="240"/><p><b>GUID:</b> 327988052038424ea3a2c78cd7be80aa.12</p>]]></description>
+    <styleUrl>#m14-point</styleUrl>
+    <Point><coordinates>174.776572,-41.287346,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Rita Angus</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/jpm6EpeYfO6NcTcE3dzls5IiyVkYSxa2rYdmKNFQgrztTDSy42CqhzaL9tgmVMuwj-9z-U3mDngGVMt1_8mYlNGlMQE19my-r96JkxOfet3LTw" width="240"/><p><b>GUID:</b> dd35a5a45e014cea9d619c3df444b7ba.16</p>]]></description>
+    <styleUrl>#m14-point</styleUrl>
+    <Point><coordinates>174.775582,-41.288726,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Hang in There</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/n9byZbm7dHfWQCsBebXkrfYEZRZJAJT9uBqZyzONLOzlV0F0iYQCArgTOSI6XBXPPyI6W8-BxRSAPH5GgUIgPxMaSr1pfq3yK6BA47jq-udK" width="240"/><p><b>GUID:</b> 684d5b49fd8b4f259d106f5e7f455e36.16</p>]]></description>
+    <styleUrl>#m14-point</styleUrl>
+    <Point><coordinates>174.775371,-41.288829,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bond Street Heads</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/cYtwOUyO3ogaOUCVIvmxX2yJSnj2VtXT81i0MXMNDjT6bS2MyW3XBSFV65tgKMbCNWr2s7aFkLOzWj1fhrmlzOO3uzYK23xNaGi3KJiWXYazWQ" width="240"/><p><b>GUID:</b> 5e5a868dd35749129c70eab723c09e21.16</p>]]></description>
+    <styleUrl>#m14-point</styleUrl>
+    <Point><coordinates>174.77533,-41.288982,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bond Street Mural Wall</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/2w69dKuArzPFmP4Y_eoSIQHGlHuO-qarPQEGmpki7ppViOU83KIYdJJiug8ukE25aSIK-RjPKdeHfV3NkEcfMtPF7Sh9tV_j3CZhtqfjSkpIxg" width="240"/><p><b>GUID:</b> 076ca1c775a44280b8317824aa2a9551.16</p>]]></description>
+    <styleUrl>#m14-point</styleUrl>
+    <Point><coordinates>174.77528,-41.28907,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Grand Head</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/7DwvCxw0up3Ow5Z6e6QNJTFAZgRoqEOxO0ml50Dj52_GBblCgTJ-VVl7c2MOvQ_hbMqbl5dxMDVTk7FF7Fw4LRNLsH8V1RFk575GXBIkC3Pt" width="240"/><p><b>GUID:</b> a9a4e898e9e247779663f37d083145d4.11</p>]]></description>
+    <styleUrl>#m14-point</styleUrl>
+    <Point><coordinates>174.775996,-41.28905,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Victoria Street Art — Route</name>
+    <styleUrl>#m14-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.776572,-41.287346,0 174.775582,-41.288726,0 174.775371,-41.288829,0 174.77533,-41.288982,0 174.77528,-41.28907,0 174.775996,-41.28905,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Playing For You Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/AcEEVGM0zZiYokpkD1MbtkAZM_1uXkdNBo0d5wBdyFKwiBjt1Mm5M85U9z14s44I-qKxsmsEshmOS3MveZwAuowiS6AiEyQ3_MZw41q6gIsS" width="240"/><p><b>GUID:</b> 77568d9b89334ca2b469d592f9f8910d.16</p>]]></description>
+    <styleUrl>#m15-point</styleUrl>
+    <Point><coordinates>174.77601,-41.28965,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lombard Lane Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/5zsbqL03-VIXKpLDW6GganBgetRmXHB1GPXKmJuQZoILMezBrqRQEqwT7C9IW7cmccCzOxTz79rwbdW_bpkyPeelljxMaw_KakGaeDYl-jrS" width="240"/><p><b>GUID:</b> 67e3361bec8740e78dfaf3097162e267.16</p>]]></description>
+    <styleUrl>#m15-point</styleUrl>
+    <Point><coordinates>174.776064,-41.289978,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Where the Wild Things Park</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/HlSXVnsPDuPvlL4n9lOEm5i0RkuYSQrRptogOCniyIbsMwwNbtl_sik0cvyY3AxSpmkUYVD44Uv5I5RQ3Pm-yLRz6XzpSmA5Ph6MikfQfNQ" width="240"/><p><b>GUID:</b> fa8ea322594746ec9ee6accec420aa12.16</p>]]></description>
+    <styleUrl>#m15-point</styleUrl>
+    <Point><coordinates>174.77668,-41.290075,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Felix</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/cB_TiGKV7EOG_2qQctQvLDMn6gJJFxHGs2LSoZNCXuydfrDHWGVJHWxA5vDnRguiyWqNkbq_7G0w1p16QH_qd8SX6eLKcM12Arwn64cVhZA0" width="240"/><p><b>GUID:</b> 4d55158586b94564be01cedd64bb9878.16</p>]]></description>
+    <styleUrl>#m15-point</styleUrl>
+    <Point><coordinates>174.777196,-41.290099,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Baby on a Seahorse Graffiti</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/oYJuT_rtU5fuHPApj5iUslo5A9F87_8VfEHfawN_GRJgI2TgNwWpDuEHiUcYbUWiS371CmPlQfSyP_BapO5UU0s4qwanVyglVofGjjmBGuhR" width="240"/><p><b>GUID:</b> 7d45524bd6ea485eb390837b0931a114.16</p>]]></description>
+    <styleUrl>#m15-point</styleUrl>
+    <Point><coordinates>174.777442,-41.289955,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>The Philanthropist's Stone</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/5DMWMLw8BvErCka41jfyT3H8HYHmf0Fi8qjOED0LbQQL4dKUCl-df3k-Qq9kQtoFG9mpveIwqJSL4S241TcCnYQpM9By_PVxUr4oSJbJ0fQo" width="240"/><p><b>GUID:</b> da8ba77f43c349d3b05bba0b4a12916b.16</p>]]></description>
+    <styleUrl>#m15-point</styleUrl>
+    <Point><coordinates>174.777425,-41.290226,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Bond Street Art — Route</name>
+    <styleUrl>#m15-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.77601,-41.28965,0 174.776064,-41.289978,0 174.77668,-41.290075,0 174.777196,-41.290099,0 174.777442,-41.289955,0 174.777425,-41.290226,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Rockband Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/5U-OQaNWuqQCv0CTWVyzO-cZYqCDXZIyxQcBHZwggf_StdQW5Bl_mjdHCJnhmEIrliLvMrcF5arIRnCB5g1RHsNFHlpRJEcsm0dNSFJ1WAr-HQ" width="240"/><p><b>GUID:</b> 34ae1560b4694a96b952bb62f960ba68.16</p>]]></description>
+    <styleUrl>#m16-point</styleUrl>
+    <Point><coordinates>174.777049,-41.29078,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>William Waiirua Graffiti Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/m9-aT-tAMQCc68kd2ykeYXo5xo6EAdaslFzDjP_c1vkX_3iFHJ0KYnhpTpmu8n8-k6amD7RCpPgybQOnM-Jj72yiEASqjnCFzjR6XyFm3b-i" width="240"/><p><b>GUID:</b> d842e494a5ea3dd987cfade08c4f8279.16</p>]]></description>
+    <styleUrl>#m16-point</styleUrl>
+    <Point><coordinates>174.776517,-41.291032,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Cuban Monster in Wellington</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/22DR1uUomf1E3fDC0diMUSqOMZaLzTwHj1J-F2fd581qP5uVCd93j4kuPtOVGVuq_I1KenTTYpQpDkvJ4C6qv9ebkl49E09lZ06MsCyM0ig6gQ" width="240"/><p><b>GUID:</b> 07aa8b4ab440422aa01f15c01a813a56.11</p>]]></description>
+    <styleUrl>#m16-point</styleUrl>
+    <Point><coordinates>174.776854,-41.291263,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bucket Fountain</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/KjUwkDvdJdG5hPiRwVlvVSYmGGzVm4o8t_e54-IeogSb3wlwOG31f3N5OxhaUF02OVpCO4u7jDayT5XmbZnbaWX1z-Cbmf7MHl3YMS3ZhCt_" width="240"/><p><b>GUID:</b> 28c9f6cadc3449249b8f1e1a599df449.11</p>]]></description>
+    <styleUrl>#m16-point</styleUrl>
+    <Point><coordinates>174.776324,-41.292221,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Green Tuatara</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/Pz0X4YwuedjTFiSvhtuj9Ds4t65mMwalfYUBvOy5q2-0eV-uZ7pZb3YBCLhaobfU6krt4gnS7kVMukenLdc6snd8Ea-vzcMP59MhEOe7owwlBg" width="240"/><p><b>GUID:</b> 61d3526848164107940eb402dbc5f5ca.16</p>]]></description>
+    <styleUrl>#m16-point</styleUrl>
+    <Point><coordinates>174.776275,-41.292335,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>inkLink Pandas</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/cYzycex8GLLaLdF9uVg9ky1Coi7RtIq-CnAF0NWIZLPPc8GaPvQcHGPQDO1cc5xg2eAQobumWitiwR_sz1Z92FmfUPuTov5qLeOBUIIJspI" width="240"/><p><b>GUID:</b> fd40ec4a1c823f22b2e7eb41e7143524.16</p>]]></description>
+    <styleUrl>#m16-point</styleUrl>
+    <Point><coordinates>174.77595,-41.292624,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Cuba Street Art — Route</name>
+    <styleUrl>#m16-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.777049,-41.29078,0 174.776517,-41.291032,0 174.776854,-41.291263,0 174.776324,-41.292221,0 174.776275,-41.292335,0 174.77595,-41.292624,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Skateboard Dog</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/cwmSN07b18bxq0uKz4CiL5wI9lGQ-39StXiDPdkmg7USqYir69g2oh-WJwDfJuAukeKFr1kVv9bWkqk2UzKyC70XLvHLLkRmsYXqPqmHgOv_" width="240"/><p><b>GUID:</b> 75fca800b4553a8795e5aa934a2ae439.16</p>]]></description>
+    <styleUrl>#m17-point</styleUrl>
+    <Point><coordinates>174.775558,-41.292552,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Wellington Hills Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/dbNM8UWkcbURWrBsKlMfC_SU2U9_qGuMU0b5ZWeYAAf5Ph7QQ30jHUchJWOz0_Gy-ogL2Y1JPfov2zt-03h1KbFPjuZYw_yfEmI5p1Otyi2M" width="240"/><p><b>GUID:</b> f77265fd789c4a6b9abca5e24f0a5bc3.16</p>]]></description>
+    <styleUrl>#m17-point</styleUrl>
+    <Point><coordinates>174.775385,-41.292401,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Flower And Vines Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/u1vavq9HeS5W5ULW8Q-T9AR2QH-1CfhZyKYTKLMZaRNgpRsUs3WPJxC2y_dgUqfBIaCJb3exsjztVhq7drFkzWLHI5WBtHUJwyaB5CTG3p0" width="240"/><p><b>GUID:</b> e4ac4a16c7d14ef2a1e3fb90ed68d4c5.16</p>]]></description>
+    <styleUrl>#m17-point</styleUrl>
+    <Point><coordinates>174.775356,-41.292358,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Wellington On A Plate Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/8cWKDxrY0rTKKkyYDxk6sk1u2cVkYtkkPJxnnqznI5HVMqCDzqd2TCvhWNVNR0Y08O5APf_qbdC6qWhOLTgS57oEsjVyNjMJOKu3mO3B4wA" width="240"/><p><b>GUID:</b> 967710c042763eee8b1d26566e5a7520.16</p>]]></description>
+    <styleUrl>#m17-point</styleUrl>
+    <Point><coordinates>174.774776,-41.292263,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Serenity</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/TRXcgo_3bIbgNljHI31w5Ks04PFu3DZ7nB20S6z6mcKhvORmOqfAmb1Ldj7Z8E58bLJ0xMO95IWsLAl8rcNmY13rMImNGhiHW4PzvByO3xkP" width="240"/><p><b>GUID:</b> 9b69b5e148d04cbd8e675360114be2fc.16</p>]]></description>
+    <styleUrl>#m17-point</styleUrl>
+    <Point><coordinates>174.775428,-41.293037,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Beep Beep Yeah SE3388</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/NJ_ue1i4NZIdACu7LuMbmsmyPCI_QnwL6DmviBHXEE4q7sB73tEwA51U3AiePILMg3SZ-5wUvaneHcHDfZ4yz7LjRwcI5ejuwgjG5RmaCxQ" width="240"/><p><b>GUID:</b> c9e178ba09134c129325edc86ddc875f.16</p>]]></description>
+    <styleUrl>#m17-point</styleUrl>
+    <Point><coordinates>174.775031,-41.292976,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Left Bank Art — Route</name>
+    <styleUrl>#m17-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.775558,-41.292552,0 174.775385,-41.292401,0 174.775356,-41.292358,0 174.774776,-41.292263,0 174.775428,-41.293037,0 174.775031,-41.292976,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Painting Eggs Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/6A2ZL_5YJSaMtwFo_KUSv5HSThxlUK8c-11twhj6s4VCVK1DRI87fZW8ZI1-OVuM-t2F8MSHcCoCLBEFaTIdxND8JZEntcXLeGZVgndQSstZ7Q" width="240"/><p><b>GUID:</b> 9314e61a288847cdacc8a33178764729.16</p>]]></description>
+    <styleUrl>#m18-point</styleUrl>
+    <Point><coordinates>174.774426,-41.292995,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Rocket Art</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/gaBeNNSW8zpud4OBkYrRtyDIzlKO8i7GPR45lbr-0xbE-pke2yFSN3iEh8vnEgA5VbNu8ZhqQdMH3oTMzdRFOCty9QqJe3ZNidZzMlNj30txbQ" width="240"/><p><b>GUID:</b> 6f97160f2dab4293938e5d2d10da30ed.12</p>]]></description>
+    <styleUrl>#m18-point</styleUrl>
+    <Point><coordinates>174.774799,-41.293358,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Rainbow Trumpet Dog</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/gxX8MZeXhxC9iw8v70-8sf6fXuYUau-BysaGc2Jbwa6xW3PLQ8NwDCILST7KFiD5I57W3hOG3HITqTxiCnLYQt1Iz7XH8ItPNzrjyW-1_diV" width="240"/><p><b>GUID:</b> c2f530861cc74f2fa63ee80ff962259f.16</p>]]></description>
+    <styleUrl>#m18-point</styleUrl>
+    <Point><coordinates>174.774449,-41.293416,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>The Fabric Store Wall</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/T2pUC-r--aRRh8n6NX4cPrzpznHxPmteawxGcMJrztM0ZGdMZHKGJV9ZYea6Ho5nGWUR38kv7FKYkMR4KMDBr7DJJH2s4qcCqblVWqzAYnQ" width="240"/><p><b>GUID:</b> c94a8aaaa7ad4bec9e47f92230e48003.16</p>]]></description>
+    <styleUrl>#m18-point</styleUrl>
+    <Point><coordinates>174.774566,-41.293714,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Red &amp; Yellow Alligator</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/By9yjWVBXneUnHReBV9soeyw21P6o3OtRzFRLQHF8h013Nl6-6JynAhUbhGG5C-GzLlQwJUX2edHJ_7oDySXsmQydcJoKdpxaQeUJj9TiGZ6" width="240"/><p><b>GUID:</b> f645e34b46f642c1a097da8f7607459a.16</p>]]></description>
+    <styleUrl>#m18-point</styleUrl>
+    <Point><coordinates>174.775217,-41.293729,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Avatar - The Way of Water</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/6yzi9--qw9VOrrohbBKozwoKYY830MuWZ4_T-UQxcE8laSk6dfTatmCYu1AfT7KvgQUbjjhfstv5b-KRhvT-kL9KUItpnOY159smaCEZqGp7" width="240"/><p><b>GUID:</b> cf9b2c902bf3331fb4d386424aa7f7c1.16</p>]]></description>
+    <styleUrl>#m18-point</styleUrl>
+    <Point><coordinates>174.775726,-41.293593,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Glover Park Art — Route</name>
+    <styleUrl>#m18-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.774426,-41.292995,0 174.774799,-41.293358,0 174.774449,-41.293416,0 174.774566,-41.293714,0 174.775217,-41.293729,0 174.775726,-41.293593,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Orange Beauty</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/6e5vVGUy9CgX6Epr4_5sT9JqLGsw98KJg2PrzAIgI0xmLgpXH74O7Jh2-zFfi4dPfCd-vFauRhLqdi-NN1eSIddyZMDv_XYGbeKREeFLuGWa" width="240"/><p><b>GUID:</b> 9ec3a961973d49e18b658ed2659f64e3.16</p>]]></description>
+    <styleUrl>#m19-point</styleUrl>
+    <Point><coordinates>174.77625,-41.293186,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Legs</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/T4W-WwIZhDSiFt3v_VDm0CDsLiy2dX2P8MR9b81hgLrGbwhvTaMz9xV9NOBLBxIErEA4P09oQyH_rYTg-zlCHwpv61o0rEE6FexVPk2jhEv3_w" width="240"/><p><b>GUID:</b> d6798b72992a42f481d6ae15fb034cc7.16</p>]]></description>
+    <styleUrl>#m19-point</styleUrl>
+    <Point><coordinates>174.77658,-41.293161,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Colouring In Competition</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/XSOTrPotn26eWj8XHLBxv4IL2518MCi_ICcxuWbhDuVtMJIaobTHOIdMehNPIilEyC6YAPLiS9q8BYmEJyvOuVfKNYPFEtKPkDPL3uD605mV" width="240"/><p><b>GUID:</b> 34090067787e4e429f6584a75152b3dd.16</p>]]></description>
+    <styleUrl>#m19-point</styleUrl>
+    <Point><coordinates>174.776705,-41.293165,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Crazy Cat Lady</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/m-ikEjCFjd3CW2m5tfYDl6JV7OJYl3kjVGkdTCqJIr1820ajXkT9XfkPjrRDuXiTJ-mWpP1EJ-OLy88HhceCnj5o4cpviFK_fMq-c7bgdqZLOQ" width="240"/><p><b>GUID:</b> fe5770e7f832477c93c605673d2c8ff5.16</p>]]></description>
+    <styleUrl>#m19-point</styleUrl>
+    <Point><coordinates>174.776803,-41.292989,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Wellington Chocolate Factory - Entrance Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/nASLGVgV7OSp4vnBG9WmU5p1ihZyJjaiYJSgN7sAx9sEXOp3Ka0Pc4sCkAJL-xVyWQUTYjfI0hdqiORkfD0l6DxYYd8V8fmX58BoAdztDo24CQ" width="240"/><p><b>GUID:</b> a1c6879b9238352ea24856be1261c773.16</p>]]></description>
+    <styleUrl>#m19-point</styleUrl>
+    <Point><coordinates>174.777201,-41.292539,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Tiny Face Graffiti</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/YDaCkEHUx-R1hckTSfL-2yBFLg3Z2YBla4n8q7_f9ven_KZiu8vsowWLGBUCyKCyJaXg3HA9NjQ_flDFmaVkJFrmqNPPH-jdqj1nzKRga1tz" width="240"/><p><b>GUID:</b> 7d95f3244e7a462b9c4dc5b66af086ff.16</p>]]></description>
+    <styleUrl>#m19-point</styleUrl>
+    <Point><coordinates>174.777226,-41.292331,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Eva Street Art — Route</name>
+    <styleUrl>#m19-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.77625,-41.293186,0 174.77658,-41.293161,0 174.776705,-41.293165,0 174.776803,-41.292989,0 174.777201,-41.292539,0 174.777226,-41.292331,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Birdcage Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/R6JfK5vEloVnySjCXVdEnJ_FZKTP0QiaSFdd7d4kMOizRCLQcNoNFRiC1X1U2BItwM2hVGrZv6ZVVi2KiddJE2YNTRT_SqDSgl8lN0B15X0YvQ" width="240"/><p><b>GUID:</b> 7309b26c5dfc4a479bef4653a651c1cb.16</p>]]></description>
+    <styleUrl>#m20-point</styleUrl>
+    <Point><coordinates>174.77716,-41.291873,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Opera House</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/DqLBZOmGdGb3iyhllwNbzPuida7MP7ugFSRB_UvVZnfdYA6hrH0ztgay9-KetkjvyEUVL3hiVfFRPgZPFrTx48pc7xW_QV6MD7wd1xtrZHAk" width="240"/><p><b>GUID:</b> bc09f2ae416e4f51a584a6840dc84b84.16</p>]]></description>
+    <styleUrl>#m20-point</styleUrl>
+    <Point><coordinates>174.777723,-41.291632,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lukes Lane Street Art</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/1ohakAZC_mXJTDlJoMWrXxnmTOmXX6yq5KpImyApagNR25gdaLAEFKaw81XNeubVnV95OUNkuZRPJdXVwUcxLnyEe0w78SCv0qHW_UG-arI" width="240"/><p><b>GUID:</b> 4fc52238957143b4bf0332065b7002f4.16</p>]]></description>
+    <styleUrl>#m20-point</styleUrl>
+    <Point><coordinates>174.778192,-41.291935,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Gone Fishing Lukes Lane Street Art</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/-c_NkKFivjzU3DuyTxjGchkxaT-fgCAfCTTvhEartBR1i_9j7LHHq3gNajhXB1VGdRze_tSs4GS_sYp90X434Wp6zw77J_yoAl23vM4daHc6ew" width="240"/><p><b>GUID:</b> 51d1d072f6ec44d1b156309025fabf18.16</p>]]></description>
+    <styleUrl>#m20-point</styleUrl>
+    <Point><coordinates>174.778485,-41.291771,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>James Smith Carpark Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/q0AKFHrFB3Hq3UzU-kyRcrRYhKXZBIfaJjGQhb_i4xvYGDtnWxoPihy3ebOZMVxaCLKHFPY9Yv6MKDTyFV5Zvmh7Qed7GhLBvfnedqMbh7U" width="240"/><p><b>GUID:</b> cf04cdc4541b4908b09039ef1c11d60d.16</p>]]></description>
+    <styleUrl>#m20-point</styleUrl>
+    <Point><coordinates>174.778698,-41.291659,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sea Bubble Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/cijLTPJ724gRh4ue3C_Gks30QC7AqeaM1tpwDpjwFzzDymKFJodO3pFVj-X-R99NnL8fQEE7o0eXBMYzv8Kyr063yRqGIN7WRBvXmHIuIrY" width="240"/><p><b>GUID:</b> 4f088f41048d445fb3fe42a6d2717be4.16</p>]]></description>
+    <styleUrl>#m20-point</styleUrl>
+    <Point><coordinates>174.778575,-41.291502,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Te Aro Park Art — Route</name>
+    <styleUrl>#m20-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.77716,-41.291873,0 174.777723,-41.291632,0 174.778192,-41.291935,0 174.778485,-41.291771,0 174.778698,-41.291659,0 174.778575,-41.291502,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Fire Duck Vs Dragon</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/eLV6kbSJhWzCUOru0WYHKHPMz9LDUEf_LtyNERt18iFcCgC7T9-Yl3Pb4PWeN0dBZq3vkR1ktfMiu273oByA2hzpPJJHaNHE3Vo9nreJEeXv" width="240"/><p><b>GUID:</b> 20006b9f4b8e438dab9431e446548fc9.16</p>]]></description>
+    <styleUrl>#m21-point</styleUrl>
+    <Point><coordinates>174.778275,-41.291357,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Egmont Street Living Wall</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/biGPPyQurVvXqd4JHFHHkScliVk0kqvB776onnYNEH_xb0B3TIjZTaaE1-0VkiqtjPSIAZkkILkfJyzxpDmu6un9l7VvEeGKqnWltLpgFL1d" width="240"/><p><b>GUID:</b> 4feae8b639934d7199ed732ac3e7c92f.16</p>]]></description>
+    <styleUrl>#m21-point</styleUrl>
+    <Point><coordinates>174.777837,-41.292501,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Scout Unicorn</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/waQjPhr-qRyT3HocDHO3J8-0M22pd-eVBsvibSVpDWnKCIaftqVO55laMjX20OGbQv1mkcBSUXjGAxrCMKiNuhg79H-QfBz_mbI9HRZR49s" width="240"/><p><b>GUID:</b> 4eaff7df58b84165865302b03e23895e.16</p>]]></description>
+    <styleUrl>#m21-point</styleUrl>
+    <Point><coordinates>174.777595,-41.293158,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Candles</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/RVhdjkRDWM6QIeyCsMAotIUa-i4qduom0iT0n4vbFCHRCEyTeLdJrXu9NJrQDAQPUybstQFKrTnI-xgQIBnVeKBQCf7S07s2u0OaZRfW0JHw" width="240"/><p><b>GUID:</b> 290734c1891249a28559bc2d65972f61.16</p>]]></description>
+    <styleUrl>#m21-point</styleUrl>
+    <Point><coordinates>174.777394,-41.293414,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Puteketeke</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/939fHukOG8nRmgFLeh-lnTkvIDs5X7of9q9lbxmggCROO3p2vQl_wTptjXR69ZurNO0q4FpNEVHuII79JJRtppCIzQ5Wnxme3Cd-RZUGYBw" width="240"/><p><b>GUID:</b> ecc367a2417c37368717c8832dacfc56.16</p>]]></description>
+    <styleUrl>#m21-point</styleUrl>
+    <Point><coordinates>174.777404,-41.293846,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Marion Street Lady of the Night</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/cjtNnV7pzMvb4eYSlHuzlrFkfozTzN7OHt1NTNP-zBSijMObFCvI2AiqnLIVQqAEmE824sVqok_yAP9NX6uvtdopaIvMJHqudRjYsbgDZ4g" width="240"/><p><b>GUID:</b> 7b4590011cd24050bacb5c38f83f89df.16</p>]]></description>
+    <styleUrl>#m21-point</styleUrl>
+    <Point><coordinates>174.776838,-41.29378,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Egmont Street Art — Route</name>
+    <styleUrl>#m21-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.778275,-41.291357,0 174.777837,-41.292501,0 174.777595,-41.293158,0 174.777394,-41.293414,0 174.777404,-41.293846,0 174.776838,-41.29378,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>3 Eyed Psycho-Beaver</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/hM4ElGQNVt0qr8TGWyWlOlrAGpjlrZcKOZs8J55OEXf349q5pxwgJCYOoxTiE3uKHj8zRPP7WBr-995UtV3hvs5SjyeDeMCAgTv6ULdldl01" width="240"/><p><b>GUID:</b> 85bca66c36184da68145fbb469965145.16</p>]]></description>
+    <styleUrl>#m22-point</styleUrl>
+    <Point><coordinates>174.776547,-41.293892,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Theosophical Society</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/MebIj6H888owYrJd9VOfqgjnFMqrBhf-C3M8OABnGT9HUXYeVlMbxlqa-Xsxb9fGLRrgZag7hQQV-2qfI8PqQZwBXfLJV8sj1hTZR3_tqexOXA" width="240"/><p><b>GUID:</b> c7217eb1b371408687cc3612df0fd20c.16</p>]]></description>
+    <styleUrl>#m22-point</styleUrl>
+    <Point><coordinates>174.77652,-41.294372,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Skinned</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/y1f7mOgIFmwtozdgYAtDuGagka77iEQT7KiGrYTxAl-jpIEutWc670kqSMexzA_KeKZc7lluQPqcL2HjGejBB6zCL6t39faFn86AfG21Su8" width="240"/><p><b>GUID:</b> 0c23c3b818264e24b418549cf008af5b.16</p>]]></description>
+    <styleUrl>#m22-point</styleUrl>
+    <Point><coordinates>174.775491,-41.294545,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Pointer Dog</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/NN-B5PESGRY9UBbDCPhFXgFNM5l7lnlZ8V_HhGCko6R_9JY9LNlrIh6zyyN79r-BDy1Db6rR04nsOEOwJsJN-b42iUEf8PCyJAFAPETZOm0" width="240"/><p><b>GUID:</b> da47a256f81f4c3da6f9b6bb796f80be.16</p>]]></description>
+    <styleUrl>#m22-point</styleUrl>
+    <Point><coordinates>174.775664,-41.294297,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Fat Stork</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/V7ES4GoMRK81is9Wl-Vsmrfq2wbqYE4yHqXSQak_yIkVBX0KzotzspzNR7B-n63DZVG8lagvzG00khusEsKzyx_u_UaT3Z8WRYJ_EU8FmzbO" width="240"/><p><b>GUID:</b> f038c00720114af58ad2134c95a27418.16</p>]]></description>
+    <styleUrl>#m22-point</styleUrl>
+    <Point><coordinates>174.775135,-41.294186,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Scarfies</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/kd0kJZXVUrNJVNy5GNqj8eTobukARHIshRTVmwUGNznOzSOMbOqhZYYyZEm95z9vzMmTkpw1Gtj76q1JuiAAt6DBp1ulWszovQcdSUZazaKm" width="240"/><p><b>GUID:</b> a1813ed1675e4414b3808f87226bf824.16</p>]]></description>
+    <styleUrl>#m22-point</styleUrl>
+    <Point><coordinates>174.775308,-41.295051,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Swan Lane Art — Route</name>
+    <styleUrl>#m22-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.776547,-41.293892,0 174.77652,-41.294372,0 174.775491,-41.294545,0 174.775664,-41.294297,0 174.775135,-41.294186,0 174.775308,-41.295051,0</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Concrete Sofa</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/cNzhQgllLe-hUIQAYIsB9ucw_TSlrDr_rf2RaaAjSv05YmDvkwLIy25m1kUhOGDUClOzSHOkCa6DitncOU_3FKxMs0NNwV6w9Ztw4wsjLQb2" width="240"/><p><b>GUID:</b> 217f0880b80342558d5069f368e0c28a.16</p>]]></description>
+    <styleUrl>#m23-point</styleUrl>
+    <Point><coordinates>174.775065,-41.295446,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Fidel's Mural</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/KwDKP85PfTFk9ZKf0oPEmiaC8aU4Hv-rq0M5iVeuJgCGbTSW0a_MKCCFk0BUXVZ8TTo0tID-mFikn6loLqtHeEkDePi2QNEBm1dV7A-tIj24Ng" width="240"/><p><b>GUID:</b> a58813fbaf794b25b1a7f46e3b063a02.16</p>]]></description>
+    <styleUrl>#m23-point</styleUrl>
+    <Point><coordinates>174.773977,-41.295776,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Ekim Burgers Street Art</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/qvHaPOZt_adAvgPwDqoFoAGTJltHYproIaP9XEEHTMJ38qCsx-kfNGIh56yH5ZlvqWmaXO25qapV_0I-ofZZHuxPxQvF-TzNXPcajwJHUagY" width="240"/><p><b>GUID:</b> fb568d3b2d003be5b99b3ec0abb90788.16</p>]]></description>
+    <styleUrl>#m23-point</styleUrl>
+    <Point><coordinates>174.774281,-41.296229,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Wild Dog</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/Fm699ydG3h8LUuT02nnQcv9u2VNoZ8DD2mQVZrIave-nMUwgurqYfi9RETi9B26T9SYMy90qxkRc2umJZuNAQvYoC6BAGPV1-BDSJm7ikWlWjA" width="240"/><p><b>GUID:</b> 1014632a069b4ddc9b99c93361dea1ed.16</p>]]></description>
+    <styleUrl>#m23-point</styleUrl>
+    <Point><coordinates>174.774948,-41.296024,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Cassette Tape</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/ZYvyIWxxoMP-SJunli37xaDkCNjS1S_wVmZar0ATADWmYjrZb-yE0UgG1ORqAyg2B2ORk4n6uIOus11_seuz_Cyj38Zk-4fo8v0AmP-Pbp67" width="240"/><p><b>GUID:</b> 748cba12f7c346bba81d529b11d51599.16</p>]]></description>
+    <styleUrl>#m23-point</styleUrl>
+    <Point><coordinates>174.775133,-41.296073,0</coordinates></Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Raglan Leftie</name>
+    <description><![CDATA[<img src="https://lh3.googleusercontent.com/olvP55x0Vo1fwPAeDBL5QZlNnXh7ERaVQ8fXhaO55S9V1GnkDCUCPIvjQaeSPL4c4HbQmW59AGnMPADW6WiSGJ8d1YexEeUff_uRvF_tIlTz" width="240"/><p><b>GUID:</b> b9b85ebdcb5f34b99e1e7d071dc03733.16</p>]]></description>
+    <styleUrl>#m23-point</styleUrl>
+    <Point><coordinates>174.775068,-41.296497,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>MD 2025:Wellington, Upper Cuba Art — Route</name>
+    <styleUrl>#m23-line</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>174.775065,-41.295446,0 174.773977,-41.295776,0 174.774281,-41.296229,0 174.774948,-41.296024,0 174.775133,-41.296073,0 174.775068,-41.296497,0</coordinates>
+    </LineString>
+  </Placemark>
+    </Folder>
+  </Document>
+</kml>
